@@ -18,25 +18,24 @@
             display: inline-block;
             cursor: pointer;
         }
-
+        
         .tooltip .tooltiptext {
             visibility: hidden;
-            width: 90%; /* Adjusted for responsiveness */
-            max-width: 480px; /* Maximum width */
-            background-color: rgb(24, 23, 23);
-            color: #fff;
-            text-align: center;
-            border-radius: 5px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            bottom: 115%; /* Position the tooltip above the text */
-            left: 50%;
-            transform: translateX(-50%); /* Center the tooltip */
-            opacity: 0;
-            transition: opacity 0.3s;
+                    width: 480px;
+                    background-color: rgb(24, 23, 23);
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 5px;
+                    padding: 5px;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 115%; /* Position the tooltip above the text */
+                    left: 50%;
+                    margin-left: -100px; /* Use half of the width to center the tooltip */
+                    opacity: 0;
+                    transition: opacity 0.3s;
         }
-
+        
         .tooltip:hover .tooltiptext {
             visibility: visible;
             opacity: 1;
@@ -53,7 +52,7 @@
     </style>
 </head>
 <body class="font-[coolvetica] bg-[#231F20]">
-    <div id="home" class="grid grid-cols-1 min-h-screen w-full overflow-hidden bg-cover bg-center " style="background-image: url('/PNG/bg.png');">
+    <div id="home" class="grid grid-cols-1 min-h-screen w-full overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('/PNG/bg.png');">
         <div class="flex flex-col lg:flex-row w-full lg:w-3/4 mt-11 mx-auto">
             <!-- Left side -->
             <div class="flex-1 rounded-lg p-4">
@@ -64,7 +63,7 @@
 
                 <div class="flex flex-col sm:flex-row items-center mb-6 gap-2 text-lg md:text-xl">
                     <div class="flex items-center gap-2">
-                        <span class="text-gray-300 mx-2 text-xl font-thin hidden sm:block">|</span>
+                        <span class="text-gray-300 mx-2 text-3xl font-thin hidden sm:block">|</span>
                         <img src="https://images.assets-landingi.com/YwHHDsKsONFkm7dq/calendar_01.svg" alt="Calendar" class="w-10 h-10">
                         <div class="flex-col">
                             <span class="ml-3 font-medium text-gray-300">1st February</span>
@@ -72,7 +71,7 @@
                             <span class="text-gray-300 ml-3">2025, onwards</span>
                         </div>
                     </div>
-                    <span class="text-gray-300 mx-2 text-xl font-thin hidden sm:block">|</span>
+                    <span class="text-gray-300 mx-2 text-3xl font-thin hidden sm:block">|</span>
                     <div class="flex items-center gap-2">
                         <img src="https://icons.assets-landingi.com/icon_822838cd0010a1c7fa4913f219c3ad57ca8274fe.svg" alt="Mode" class="w-10 h-10">
                         <span class="text-gray-300">Mode: Online & Offline</span>
@@ -80,20 +79,29 @@
                 </div>
                 <div class="flex flex-col sm:flex-row items-center mb-6 gap-2 text-lg md:text-xl">
                     <div class="flex items-center gap-2">
-                        <span class="text-gray-300 mx-2 text-xl font-thin hidden sm:block">|</span>
+                        <span class="text-gray-300 mx-2 text-3xl font-thin hidden sm:block">|</span>
                         <img src="https://icons.assets-landingi.com/icon_8388ec84b3a6f31be633d76ba2de8b521b84c5a7.svg" alt="EMI" class="w-11 h-11">
                         <span class="text-gray-300 ml-1">EMI Available</span>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-gray-300 mx-2 text-xl font-thin hidden sm:block">|</span>
+                    <div class="flex items-center gap-2 ml-4">
+                        <span class="text-gray-300 mx-2 text-3xl font-thin hidden sm:block">|</span>
                         <img src="https://icons.assets-landingi.com/icon_03453bed0dd36c195c09dbd20c080f8b819e07bc.svg" alt="Certification" class="w-10 h-10">
                         <span class="text-gray-300">Certification Available</span>
                     </div>
                 </div>
 
+
+                <div class="flex items-center text-[#D7D7D7] font-light mb-4">
+                    <img src="https://cdn.lugc.link/cff3d7d9-2432-473e-9b71-a6990621590e/-/preview/77x77/-/format/auto/" alt="Mentor Image" class="rounded-full mr-4">
+                    <div>
+                        <p class="">Meet Nilesh R. Sonawane,</p>
+                        <p>Your 13+ Year Java Expert and Mentor</p>
+                        <p class="flex items-center font-extralight text-sm"><i class="fas fa-star text-yellow-500 mr-1"></i><i class="fas fa-star text-yellow-500 mr-1"></i><i class="fas fa-star text-yellow-500 mr-1"></i><i class="fas fa-star text-yellow-500 mr-1"></i><i class="fas fa-star-half-alt text-yellow-500 mr-1"></i>(150+ reviews)</p>
+                    </div>
+                </div>
                 <!-- Pricing -->
                 <div class="mt-3 flex gap-3 items-center">
-                    <div class="text-xl md:text-6xl text-[#CCD1D4]"><p>₹ 16,000</p></div>
+                    <div class="text-6xl md:text-6xl text-[#CCD1D4]"><p>₹ 16,000</p></div>
                     <div class="flex-col text-[#CCD1D4] text-xl">
                         <div><p><strike>₹ 60,000</strike></p></div>
                         <div class="text-lg md:text-xl text-yellow-500 font-bold"><p>73% off</p></div>
@@ -111,7 +119,7 @@
 <div class="relative items-center justify-center ml-[5%] text-black mt-4 w-[90%]">
                 <!-- Form -->
                 <form id="enrollmentForm" class="mt-4 w-full space-y-4">
-                    <input type="text" placeholder="Your Name" class="focus:outline-none border border-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] bg-[#FDB926] placeholder:text-[black] placeholder:opacity-100">
+                    <input type="text" placeholder="Your Name*" class="focus:outline-none border border-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] bg-[#FDB926] placeholder:text-[black] placeholder:opacity-100">
 
                     <input type="text" placeholder="Your Phone*" class="focus:outline-none border border-[#FDB926]  bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem]  placeholder:text-[black] placeholder:opacity-100 ">
                     <input type="email" placeholder="Your Email*" class="focus:outline-none border border-[#FDB926] bg-[#FDB926]  rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100 ">
@@ -136,7 +144,7 @@
                     <input type='checkbox' name='agree' id='agree' class='mt-[0.5rem]'>
                     <label for='agree' class='ml-[0.25rem] text-gray100 mr-[0.5rem]'>I agree to receive commercial information from YSM 
                       <span class='tooltip'>[*read more]
-                          <span class='tooltiptext'>Consent is voluntary...</span> 
+                          <span class='tooltiptext'>Consent is voluntary. I have the right to withdraw my consent at any time (data are processed until the withdrawal of consent). I have the right to access, rectify, delete or limit processing of the data, the right to object, the right to submit a complaint to the supervisory authority or transfer the data. The administrator is YSM located in Nashik. The administrator processes data following the Privacy Policy..</span> 
                       </span></label>
 </<div>
 
@@ -225,7 +233,136 @@
     
     
     
-
+    <div class="w-full max-w-3xl mx-auto p-6 bg-white bg-opacity-10 shadow-lg backdrop-filter backdrop-blur-lg rounded-md text-gray-300 gap-5 glow-effect">
+        <h1 class="text-3xl md:text-4xl font-semibold mb-4 text-center">Frequently Asked Questions</h1>
+        <p class="text-lg md:text-xl mb-6 text-center">Get your burning questions answered.</p>
+    
+        <div class="space-y-4 text-gray-200">
+            <div class="faq-item">
+                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                        <span class="text-lg font-bold text-black">Q 1</span>
+                    </div>
+                    <div class="flex-1 text-xl md:text-2xl">
+                        What is the duration of the internship program?
+                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                    The internship program spans 6 months, providing a comprehensive learning experience.
+                </p>
+            </div>
+    
+            <div class="faq-item">
+                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                        <span class="text-lg font-bold text-black">Q 2</span>
+                    </div>
+                    <div class="flex-1 text-xl md:text-2xl">
+                        When does the internship start?
+                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                    The program is set to commence on January 25, 2025 onwards.
+                </p>
+            </div>
+    
+            <div class="faq-item">
+                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                        <span class="text-lg font-bold text-black">Q 3</span>
+                    </div>
+                    <div class="flex-1 text-xl md:text-2xl">
+                        What does the course curriculum cover?
+                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                    The curriculum includes core and advanced Java, SQL, web development, popular frameworks, and more. Refer to the detailed curriculum for a comprehensive overview.
+                </p>
+            </div>
+    
+            <div class="faq-item">
+                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                        <span class="text-lg font-bold text-black">Q 4</span>
+                    </div>
+                    <div class="flex-1 text-xl md:text-2xl">
+                        Who is the internship designed for?
+                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                    The internship caters to MCA, MSc Computer Science & Engineering students, aspiring Java developers, college students, recent graduates, professionals seeking a career transition, self-learners, and enthusiasts.
+                </p>
+            </div>
+    
+            <div class="faq-item">
+                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                        <span class="text-lg font-bold text-black">Q 5</span>
+                    </div>
+                    <div class="flex-1 text-xl md:text-2xl">
+                        How does the internship benefit aspiring Java developers?
+                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                    Aspiring Java developers gain practical skills and knowledge necessary for a successful start in the field.
+                </p>
+            </div>
+    
+            <div class="faq-item">
+                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                        <span class="text-lg font-bold text-black">Q 6</span>
+                    </div>
+                    <div class="flex-1 text-xl md:text-2xl">
+                        What is the hands-on experience like during the internship?
+                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                    Participants will engage in live projects and hackathons, applying theoretical knowledge to real-world scenarios.
+                </p>
+            </div>
+    
+            <div class="faq-item">
+                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                        <span class="text-lg font-bold text-black">Q 7</span>
+                    </div>
+                    <div class="flex-1 text-xl md:text-2xl">
+                        Is the program suitable for self-learners and programming enthusiasts?
+                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                    Yes, the program is designed to accommodate self-driven learners passionate about programming, especially in Java.
+                </p>
+            </div>
+    
+            <div class="faq-item">
+                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                        <span class="text-lg font-bold text-black">Q 8</span>
+                    </div>
+                    <div class="flex-1 text-xl md:text-2xl">
+                        What support is provided to college students and recent graduates?
+                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                    The curriculum bridges the gap between academic learning and industry requirements, enhancing programming skills for a smooth transition.
+                </p>
+            </div>
+    
+        </div>
+    </div>
+    
+   
+    
 
 
 
@@ -244,7 +381,7 @@
 
 
 <!--timmer-->
-<div class="foot bg-[#231f20] p-6">
+<div class="foot bg-[#231f20] p-6 mt-6">
     <div class="relative w-full max-w-3xl mx-auto mt-6">
         <!-- This is the bottom div -->
         <div class="w-full px-6 shadow-2xl rounded-lg text-center items-center justify-center border border-gray-300 mt-6 bg-[#231f20]">
@@ -330,7 +467,29 @@
         const locomotiveScroll = new LocomotiveScroll();
       })();
       }
-      loco();  
+      loco();
+      
+
+      function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        answer.classList.toggle('hidden');
+    }
+
+      function toggleAnswer(element) {
+        const parent = element.parentElement;
+        const answer = parent.querySelector('p');
+        const icon = element.querySelector('i');
+  
+        if (answer.classList.contains('hidden')) {
+          answer.classList.remove('hidden');
+          icon.classList.remove('fa-chevron-down');
+          icon.classList.add('fa-chevron-up');
+        } else {
+          answer.classList.add('hidden');
+          icon.classList.remove('fa-chevron-up');
+          icon.classList.add('fa-chevron-down');
+        }
+      }
     </script>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
 </body>
