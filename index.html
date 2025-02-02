@@ -13,6 +13,9 @@
     <style>
         @import url('https://fonts.cdnfonts.com/css/coolvetica');
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        body{
+            overflow-x: hidden;
+        }
         .tooltip {
             position: relative;
             display: inline-block;
@@ -48,12 +51,12 @@
             transform: scale(1.1);
             transition: transform 0.3s ease-in-out;
           }
-        
+         
     </style>
 </head>
 <body class="font-[ubuntu] ">
     <div id="home" class="grid grid-cols-1 min-h-screen w-full overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('./PNG/bg.png'); background-position: bottom;">
-        <div class="flex flex-col lg:flex-row w-full lg:w-3/4 mt-11 mx-auto">
+        <div class="flex flex-col lg:flex-row w-full lg:w-2/3 mt-5 mx-auto">
             <!-- Left side -->
             <div class="flex-1 rounded-lg p-4">
                 <img src="https://cdn.lugc.link/7ea4da5f-5fdb-4005-9863-6ad2efa5cef9/-/preview/130x66/-/format/auto/" alt="YSM logo" class="mb-4">
@@ -116,7 +119,7 @@
 
             <!-- Right side form -->
            <div class="bg-[#FDAD00] flex-col rounded-xl mt-3 w-full lg:w-[30%] ">
-    <div class="bg-white justify-center rounded-lg items-center top-0 -gap-1 text-black p-4">
+    <div class="bg-white justify-center rounded-lg items-center top-0  text-black p-4">
         <h2 class="text-xl px-2 text-center">Ready for Your Java Development Journey?</h2>
         <h3 class="text-center text-md font-extralight font-[ubuntu]">Secure your spot in the Full Stack Java Development Training + Certified Internship.</h3>
         <h3 class="text-center text-lg">Limited seats available, Act now!</h3>
@@ -124,7 +127,7 @@
     
     <div class="relative items-center justify-center text-black mt-4 w-[90%] mx-auto">
         <!-- Form -->
-        <form id="enrollmentForm" class="mt-4 w-full space-y-4">
+        <form id="enrollmentForm" class="mt-4 w-full space-y-2">
             <input type="text" placeholder="Your Name*" class="focus:outline-none border border-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] bg-[#FDB926] placeholder:text-[black] placeholder:opacity-100">
             <input type="text" placeholder="Your Phone*" class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
             <input type="email" placeholder="Your Email*" class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
@@ -175,7 +178,7 @@
 </div>
 <br>
  <br>
- <a href="#page4"a><div class="mt-8 py-8 top-0 left-0 sticky">
+ <a href="#page4"a><div class="mt-1 py-8 top-0 left-0 sticky">
     <div class="relative  flex justify-center items-center text-white mt-11 text-xl  ">To Curriculum</div>
     <div class="flex justify-center items-center ">
       <button onclick="scrollToSection('page4')"  class="h-[50px] w-[50px] relative bottom-20  bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 focus:outline-none animate-bounce ml-[2%] ">
@@ -451,12 +454,12 @@
             </div>
         </div>
     </div>
-    </div>   
+    </div>  
 
 
-    <div class=" mt-8">
+    <div class=" mt-8 ">
         <h1 class="text-[40px] mb-8 text-center font-semibold">To Whom this <span class="text-yellow-500">Training + Internship</span> for?</h1>
-        <div class="max-w-5xl mx-auto grid grid-cols-2 gap-x-32 gap-y-8">
+        <div class=" max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  gap-x-32 gap-y-8 ">
             <div class="zoom-effect1">
                 <h2 class="text-3xl font-bold mb-2">MCA, MSc Computer Science & Engineering Students</h2>
                 <p class="text-lg text-[#828282]">Tailored for Master of Computer Applications (MCA) and Master of Science (MSc) students specializing in Computer Science & Engineering. The program offers a structured and hands-on approach to complement academic learning.</p>
@@ -762,7 +765,7 @@
         
         
      // Set the date we're counting down to
-     const countDownDate = new Date("Feb 01, 2025 11:59:59").getTime();
+     const countDownDate = new Date("Feb 28, 2025 11:59:59").getTime();
     
      // Update the countdown every 1 second
      const x = setInterval(function() {
