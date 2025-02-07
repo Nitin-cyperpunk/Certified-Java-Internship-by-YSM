@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,42 @@
     <title>Certified Java Internship by YSM</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"   />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/PNG/java1.png">
     <style>
         @import url('https://fonts.cdnfonts.com/css/coolvetica');
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-        body{
+
+        body {
             overflow-x: hidden;
         }
+
         .tooltip {
             position: relative;
             display: inline-block;
             cursor: pointer;
         }
-        
+
         .tooltip .tooltiptext {
             visibility: hidden;
-                    width: 480px;
-                    background-color: rgb(24, 23, 23);
-                    color: #fff;
-                    text-align: center;
-                    border-radius: 5px;
-                    padding: 5px;
-                    position: absolute;
-                    z-index: 1;
-                    bottom: 115%; /* Position the tooltip above the text */
-                    left: 50%;
-                    margin-left: -100px; /* Use half of the width to center the tooltip */
-                    opacity: 0;
-                    transition: opacity 0.3s;
+            width: 480px;
+            background-color: rgb(24, 23, 23);
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 115%;
+            /* Position the tooltip above the text */
+            left: 50%;
+            margin-left: -100px;
+            /* Use half of the width to center the tooltip */
+            opacity: 0;
+            transition: opacity 0.3s;
         }
-        
+
         .tooltip:hover .tooltiptext {
             visibility: visible;
             opacity: 1;
@@ -47,57 +52,80 @@
         .hover-bg-lighten:hover {
             background: linear-gradient(to right, #4a4a4a, #6f6f6f);
         }
+
         .zoom-effect1:hover {
             transform: scale(1.1);
             transition: transform 0.3s ease-in-out;
-          }
-         
+        }
     </style>
 </head>
+
 <body class="font-[ubuntu] ">
-    <div id="home" class="grid grid-cols-1 min-h-screen w-full overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('./PNG/bg.png'); background-position: bottom;">
+    <div id="home" class="grid grid-cols-1 min-h-screen w-full overflow-hidden bg-cover bg-center bg-fixed"
+        style="background-image: url('./PNG/bg.png'); background-position: bottom;">
         <div class="flex flex-col lg:flex-row w-full lg:w-2/3 mt-0 mx-auto">
             <!-- Left side -->
             <div class="flex-1 rounded-lg p-3 ">
-                <img src="https://cdn.lugc.link/7ea4da5f-5fdb-4005-9863-6ad2efa5cef9/-/preview/130x66/-/format/auto/" alt="YSM logo" class="mb-4 items-center md:items-left">
+                <img src="https://cdn.lugc.link/7ea4da5f-5fdb-4005-9863-6ad2efa5cef9/-/preview/130x66/-/format/auto/"
+                    alt="YSM logo" class="mb-4 items-center md:items-left">
                 <h1 class="text-3xl mb-2 text-[#CCD1D4] text-center md:text-left">Training + Certified Internship</h1>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl text-blue-500 mb-6 text-center  md:text-left font-bold">Full Stack Java <br>Development</h1>
-                <p class="mb-8 text-xl md:text-xl text-[#CCD1D4] text-center md:text-left">🚀 Unlock In-Demand Skills, Gain Hands-On Experience,<br> and Receive Job Placement Support</p>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl text-blue-500 mb-6 text-center  md:text-left font-bold">Full
+                    Stack Java <br>Development</h1>
+                <p class="mb-8 text-xl md:text-xl text-[#CCD1D4] text-center md:text-left">🚀 Unlock In-Demand Skills,
+                    Gain Hands-On Experience,<br> and Receive Job Placement Support</p>
 
                 <div class="grid grid-cols-2 md:grid-cols-2 text-white gap-y-2 mb-8 text-[18px] font-extralight">
                     <div class="flex items-center gap-x-5">
-                        <img src="https://images.assets-landingi.com/YwHHDsKsONFkm7dq/calendar_01.svg" class="w-10 h-10">
+                        <img src="https://images.assets-landingi.com/YwHHDsKsONFkm7dq/calendar_01.svg"
+                            class="w-10 h-10">
                         <p>1st February <br>2025, onwards</p>
                     </div>
                     <div class="flex items-center gap-x-5 ml-4">
-                        <img src="https://icons.assets-landingi.com/icon_0f587cb713ca8fa4a56ae67dbf45ddc24628e07e.svg" class="w-10 h-10">
+                        <img src="https://icons.assets-landingi.com/icon_0f587cb713ca8fa4a56ae67dbf45ddc24628e07e.svg"
+                            class="w-10 h-10">
                         <p>Duration <br> 6 Months</p>
                     </div>
                     <div class="flex items-center gap-x-5">
-                        <img src="https://icons.assets-landingi.com/icon_822838cd0010a1c7fa4913f219c3ad57ca8274fe.svg" class="w-10 h-10">
+                        <img src="https://icons.assets-landingi.com/icon_822838cd0010a1c7fa4913f219c3ad57ca8274fe.svg"
+                            class="w-10 h-10">
                         <p>Mode <br>100% Online</p>
                     </div>
                     <div class="flex items-center gap-x-5 ml-4">
-                        <img src="https://icons.assets-landingi.com/icon_8388ec84b3a6f31be633d76ba2de8b521b84c5a7.svg" class="w-10 h-10">
+                        <img src="https://icons.assets-landingi.com/icon_8388ec84b3a6f31be633d76ba2de8b521b84c5a7.svg"
+                            class="w-10 h-10">
                         <p>EMI <br> available</p>
                     </div>
-                </div>
+                              
+                </div>
 
 
                 <div class="flex items-center text-[#D7D7D7] font-light mb-4">
-                    <img src="https://cdn.lugc.link/cff3d7d9-2432-473e-9b71-a6990621590e/-/preview/77x77/-/format/auto/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/cff3d7d9-2432-473e-9b71-a6990621590e/-/preview/77x77/-/format/auto/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="">Meet Nilesh R. Sonawane,</p>
                         <p>Your 13+ Year Java Expert and Mentor</p>
-                        <p class="flex items-center font-extralight text-sm"><i class="fas fa-star text-yellow-500 mr-1"></i><i class="fas fa-star text-yellow-500 mr-1"></i><i class="fas fa-star text-yellow-500 mr-1"></i><i class="fas fa-star text-yellow-500 mr-1"></i><i class="fas fa-star-half-alt text-yellow-500 mr-1"></i>(150+ reviews)</p>
+                        <p class="flex items-center font-extralight text-sm"><i
+                                class="fas fa-star text-yellow-500 mr-1"></i><i
+                                class="fas fa-star text-yellow-500 mr-1"></i><i
+                                class="fas fa-star text-yellow-500 mr-1"></i><i
+                                class="fas fa-star text-yellow-500 mr-1"></i><i
+                                class="fas fa-star-half-alt text-yellow-500 mr-1"></i>(150+ reviews)</p>
                     </div>
-                </div>
+                              
+                </div>
                 <!-- Pricing -->
                 <div class="mt-3 flex gap-3 items-center">
-                    <div class="text-6xl md:text-6xl text-[#CCD1D4]"><p>₹ 16,000</p></div>
+                    <div class="text-6xl md:text-6xl text-[#CCD1D4]">
+                        <p>₹ 16,000</p>
+                    </div>
                     <div class="flex-col text-[#CCD1D4] text-xl">
-                        <div><p><strike>₹ 60,000</strike></p></div>
-                        <div class="text-lg md:text-xl text-yellow-500 font-bold"><p>73% off</p></div>
+                        <div>
+                            <p><strike>₹ 60,000</strike></p>
+                        </div>
+                        <div class="text-lg md:text-xl text-yellow-500 font-bold">
+                            <p>73% off</p>
+                        </div>
                     </div>
                 </div>
 
@@ -115,125 +143,160 @@
             </div>
 
             <!-- Right side form -->
-             <div class="p-4 flex-col rounded-xl mt-0 w-full lg:w-[40%]">
-           <div class="bg-[#FDAD00] rounded-xl mt-3 w-full  ">
-    <div class="bg-white justify-center rounded-lg items-center top-0  text-black p-4">
-        <h2 class="text-xl px-2 text-center">Ready for Your Java Development Journey?</h2>
-        <h3 class="text-center text-md font-extralight font-[ubuntu]">Secure your spot in the Full Stack Java Development Training + Certified Internship.</h3>
-        <h3 class="text-center text-lg">Limited seats available, Act now!</h3>
-    </div>
-    
-    <div class="relative items-center justify-center text-black mt-4 w-[90%] mx-auto">
-        <!-- Form -->
-        <form id="enrollmentForm" class="mt-4 w-full space-y-2">
-            <input type="text" placeholder="Your Name*" class="focus:outline-none border border-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] bg-[#FDB926] placeholder:text-[black] placeholder:opacity-100">
-            <input type="text" placeholder="Your Phone*" class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
-            <input type="email" placeholder="Your Email*" class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
-            <input type="text" placeholder="Your City*" class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
-            <input type="text" placeholder="College Name*" class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
+            <div class="p-4 flex-col rounded-xl mt-0 w-full lg:w-[40%]">
+                <div class="bg-[#FDAD00] rounded-xl mt-3 w-full  ">
+                    <div class="bg-white justify-center rounded-lg items-center top-0  text-black p-4">
+                        <h2 class="text-xl px-2 text-center">Ready for Your Java Development Journey?</h2>
+                        <h3 class="text-center text-md font-extralight font-[ubuntu]">Secure your spot in the Full Stack
+                            Java Development Training + Certified Internship.</h3>
+                        <h3 class="text-center text-lg">Limited seats available, Act now!</h3>
+                    </div>
 
-            <!-- Select Dropdown -->
-            <select class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mt-2 text-black">
-                <option value="" disabled selected>Select education qualification*</option>
-                <option value="B.Sc. (computer science)">B.Sc. (computer science)</option>
-                <option value="M.Sc. (computer science)">M.Sc. (computer science)</option>
-                <option value="B.E Computer Science/IT">B.E Computer Science/IT</option>
-                <option value="M.E Computer Science/IT">M.E Computer Science/IT</option>
-                <option value="BTech Computer Science/IT">BTech Computer Science/IT</option>
-                <option value="MTech Computer Science/IT">MTech Computer Science/IT</option>
-                <option value="BCA">BCA</option>
-                <option value="MCA">MCA</option>
-                <option value="NON IT">Other</option>
-            </select>
+                    <div class="relative items-center justify-center text-black mt-4 w-[90%] mx-auto">
+                        <!-- Form -->
+                        <form id="enrollmentForm" class="mt-4 w-full space-y-2">
+                            <input type="text" placeholder="Your Name*"
+                                class="focus:outline-none border border-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] bg-[#FDB926] placeholder:text-[black] placeholder:opacity-100">
+                            <input type="text" placeholder="Your Phone*"
+                                class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
+                            <input type="email" placeholder="Your Email*"
+                                class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
+                            <input type="text" placeholder="Your City*"
+                                class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
+                            <input type="text" placeholder="College Name*"
+                                class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
 
-            <!-- Checkbox -->
-            <div class='flex items-center'>
-                <input type='checkbox' name='agree' id='agree' class='mt-[0.5rem]'>
-                <label for='agree' class='ml-[0.25rem] text-gray-100 mr-[0.5rem]'>I agree to receive commercial information from YSM 
-                    <span class='tooltip'>[*read more]
-                        <span class='tooltiptext'>Consent is voluntary. I have the right to withdraw my consent at any time (data are processed until the withdrawal of consent). I have the right to access, rectify, delete or limit processing of the data, the right to object, the right to submit a complaint to the supervisory authority or transfer the data. The administrator is YSM located in Nashik. The administrator processes data following the Privacy Policy.</span> 
-                    </span>
-                </label>
+                            <!-- Select Dropdown -->
+                            <select
+                                class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mt-2 text-black">
+                                <option value="" disabled selected>Select education qualification*</option>
+                                <option value="B.Sc. (computer science)">B.Sc. (computer science)</option>
+                                <option value="M.Sc. (computer science)">M.Sc. (computer science)</option>
+                                <option value="B.E Computer Science/IT">B.E Computer Science/IT</option>
+                                <option value="M.E Computer Science/IT">M.E Computer Science/IT</option>
+                                <option value="BTech Computer Science/IT">BTech Computer Science/IT</option>
+                                <option value="MTech Computer Science/IT">MTech Computer Science/IT</option>
+                                <option value="BCA">BCA</option>
+                                <option value="MCA">MCA</option>
+                                <option value="NON IT">Other</option>
+                            </select>
+
+                            <!-- Checkbox -->
+                            <div class='flex items-center'>
+                                <input type='checkbox' name='agree' id='agree' class='mt-[0.5rem]'>
+                                <label for='agree' class='ml-[0.25rem] text-gray-100 mr-[0.5rem]'>I agree to receive
+                                    commercial information from YSM
+                                    <span class='tooltip'>[*read more]
+                                        <span class='tooltiptext'>Consent is voluntary. I have the right to withdraw my
+                                            consent at any time (data are processed until the withdrawal of consent). I
+                                            have the right to access, rectify, delete or limit processing of the data,
+                                            the right to object, the right to submit a complaint to the supervisory
+                                            authority or transfer the data. The administrator is YSM located in Nashik.
+                                            The administrator processes data following the Privacy Policy.</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type='submit'
+                                class="bg-gradient-to-r from-black via-[#3ea3e6] to-[#3f81a5] text-white px-6 py-2 rounded-lg text-xl border border-white hover:bg-lighten mt-4">
+                                Pay ₹8,000 Now & Enroll
+                            </button>
+
+                        </form>
+
+                        <!-- Did you know section -->
+                        <div class='mt-[1rem] text-center'>
+                            <p><strong>Did you know?</strong> Java developers earn <strong>18-24 LPA</strong> in India
+                                and <strong>$80K-$90K</strong> globally*.
+                                Don't miss out on this opportunity!
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Submit Button -->
-            <button type='submit' 
-                    class="bg-gradient-to-r from-black via-[#3ea3e6] to-[#3f81a5] text-white px-6 py-2 rounded-lg text-xl border border-white hover:bg-lighten mt-4">
-                Pay ₹8,000 Now & Enroll
-            </button>
-
-        </form>
-
-        <!-- Did you know section -->
-        <div class='mt-[1rem] text-center'>
-            <p><strong>Did you know?</strong> Java developers earn <strong>18-24 LPA</strong> in India and <strong>$80K-$90K</strong> globally*.
-                Don't miss out on this opportunity!
-            </p>
         </div>
+        <br>
+        <br>
+        <a href="#page4" a>
+            <div class="mt-1 py-8 top-0 left-0 sticky">
+                <div class="relative  flex justify-center items-center text-white mt-11 text-xl  ">To Curriculum</div>
+                <div class="flex justify-center items-center ">
+                    <button onclick="scrollToSection('page4')"
+                        class="h-[50px] w-[50px] relative bottom-20  bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 focus:outline-none animate-bounce ml-[2%] ">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                        
+                </div>
+            </div>
+        </a>
     </div>
-</div>
-</div>
 
-</div>
-<br>
- <br>
- <a href="#page4"a><div class="mt-1 py-8 top-0 left-0 sticky">
-    <div class="relative  flex justify-center items-center text-white mt-11 text-xl  ">To Curriculum</div>
-    <div class="flex justify-center items-center ">
-      <button onclick="scrollToSection('page4')"  class="h-[50px] w-[50px] relative bottom-20  bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 focus:outline-none animate-bounce ml-[2%] ">
-        <i class="fas fa-arrow-down"></i>
-      </button>
-    </div></div></a>
-    </div> 
-    
-    <div class="grid p-5 md:p-11  min-h-screen w-full overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('./PNG/pattern.webp'); font-[ubuntu]">
-        <h1 class="text-3xl md:text-4xl font-bold mb-10 text-black leading-tight text-center">Training + Internship Program Benefits..</h1>
+    <div class="grid p-5 md:p-11  min-h-screen w-full overflow-hidden bg-cover bg-center bg-fixed"
+        style="background-image: url('./PNG/pattern.webp'); font-[ubuntu]">
+        <h1 class="text-3xl md:text-4xl font-bold mb-10 text-black leading-tight text-center">Training + Internship
+            Program Benefits..</h1>
         <div id="page2 ">
             <div class="about max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center zoom-effect1">
                     <img src="https://cdn-icons-png.flaticon.com/128/13092/13092265.png" class="mx-auto mb-4 w-16 h-16">
                     <h2 class="text-lg md:text-xl text-black font-semibold">Professional Java Programming Skills</h2>
-                    <p class="text-gray-700 mt-2 text-sm md:text-base">Attain the ability to program in Java professionally, meeting industry standards.</p>
+                    <p class="text-gray-700 mt-2 text-sm md:text-base">Attain the ability to program in Java
+                        professionally, meeting industry standards.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center zoom-effect1">
                     <img src="https://cdn-icons-png.flaticon.com/128/11078/11078771.png" class="mx-auto mb-4 w-16 h-16">
                     <h2 class="text-lg md:text-xl text-black font-semibold">Real-world Application</h2>
-                    <p class="text-gray-700 mt-2 text-sm md:text-base">Apply learned skills in real-world scenarios, preparing for the challenges of professional development.</p>
+                    <p class="text-gray-700 mt-2 text-sm md:text-base">Apply learned skills in real-world scenarios,
+                        preparing for the challenges of professional development.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center zoom-effect1 glow-effect">
                     <img src="https://cdn-icons-png.flaticon.com/128/12343/12343398.png" class="mx-auto mb-4 w-16 h-16">
                     <h2 class="text-lg md:text-xl text-black font-semibold">Career Diversification</h2>
-                    <p class="text-gray-700 mt-2 text-sm md:text-base">Diversify career options with proficiency in Java applicable to various domains.</p>
+                    <p class="text-gray-700 mt-2 text-sm md:text-base">Diversify career options with proficiency in Java
+                        applicable to various domains.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center zoom-effect1">
                     <img src="https://cdn-icons-png.flaticon.com/128/10856/10856857.png" class="mx-auto mb-4 w-16 h-16">
                     <h2 class="text-lg md:text-xl text-black font-semibold">Employability Enhancement</h2>
-                    <p class="text-gray-700 mt-2 text-sm md:text-base">Enhance employability with a well-rounded skill set and industry-relevant knowledge.</p>
+                    <p class="text-gray-700 mt-2 text-sm md:text-base">Enhance employability with a well-rounded skill
+                        set and industry-relevant knowledge.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center zoom-effect1">
-                    <img src="https://cdn-icons-png.flaticon.com/128/6703/6703900.png" alt="Certification and Recognition" class="mx-auto mb-4 w-16 h-16">
+                    <img src="https://cdn-icons-png.flaticon.com/128/6703/6703900.png"
+                        alt="Certification and Recognition" class="mx-auto mb-4 w-16 h-16">
                     <h2 class="text-lg md:text-xl text-black font-semibold">Certification and Recognition</h2>
-                    <p class="text-gray-700 mt-2 text-sm md:text-base">Pursue Oracle Java Certification for industry recognition and validation of skills.</p>
+                    <p class="text-gray-700 mt-2 text-sm md:text-base">Pursue Oracle Java Certification for industry
+                        recognition and validation of skills.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center zoom-effect1">
-                    <img src="https://cdn-icons-png.flaticon.com/128/2622/2622191.png" alt="Networking Opportunities" class="mx-auto mb-4 w-16 h-16">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2622/2622191.png" alt="Networking Opportunities"
+                        class="mx-auto mb-4 w-16 h-16">
                     <h2 class="text-lg md:text-xl text-black font-semibold">Networking Opportunities</h2>
-                    <p class="text-gray-700 mt-2 text-sm md:text-base">Network with industry professionals and peers, expanding opportunities for collaboration and learning.</p>
+                    <p class="text-gray-700 mt-2 text-sm md:text-base">Network with industry professionals and peers,
+                        expanding opportunities for collaboration and learning.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-6 text-center zoom-effect1">
-                    <img src="https://cdn-icons-png.flaticon.com/128/2075/2075694.png" alt="Future Ready Skills" class="mx-auto mb-4 w-16 h-16">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2075/2075694.png" alt="Future Ready Skills"
+                        class="mx-auto mb-4 w-16 h-16">
                     <h2 class="text-lg md:text-xl text-black font-semibold">Future-Ready Skills</h2>
-                    <p class="text-gray-700 mt-2 text-sm md:text-base">Acquire skills that are relevant not only to current industry demands but also to future advancements in Java development.</p>
+                    <p class="text-gray-700 mt-2 text-sm md:text-base">Acquire skills that are relevant not only to
+                        current industry demands but also to future advancements in Java development.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center zoom-effect1">
-                    <img src="https://cdn-icons-png.flaticon.com/128/3850/3850285.png" alt="Confidence in Job Search" class="mx-auto mb-4 w-16 h-16">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3850/3850285.png" alt="Confidence in Job Search"
+                        class="mx-auto mb-4 w-16 h-16">
                     <h2 class="text-lg md:text-xl text-black font-semibold">Confidence in Job Search</h2>
-                    <p class="text-gray-700 mt-2 text-sm md:text-base">Approach job searches with confidence, armed with practical experience and a comprehensive skill set.</p>
+                    <p class="text-gray-700 mt-2 text-sm md:text-base">Approach job searches with confidence, armed with
+                        practical experience and a comprehensive skill set.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg p-6 text-center zoom-effect1 glow-effect">
-                    <img src="https://cdn-icons-png.flaticon.com/128/12162/12162180.png" alt="Continuous Learning Culture" class="mx-auto mb-4 w-16 h-16">
+                    <img src="https://cdn-icons-png.flaticon.com/128/12162/12162180.png"
+                        alt="Continuous Learning Culture" class="mx-auto mb-4 w-16 h-16">
                     <h2 class="text-lg md:text-xl text-black font-semibold">Continuous Learning Culture</h2>
-                    <p class="text-gray-700 mt-2 text-sm md:text-base">Instill a culture of continuous learning, staying updated with the latest developments in Java and related technologies.</p>
+                    <p class="text-gray-700 mt-2 text-sm md:text-base">Instill a culture of continuous learning, staying
+                        updated with the latest developments in Java and related technologies.</p>
                 </div>
             </div>
         </div>
@@ -241,14 +304,18 @@
 
 
     <div class="bg-white">
-        
-        <section class="pb-36 text-white py-20 h-auto w-full overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('./PNG/bgbuildblur.avif'); ">
+
+        <section class="pb-36 text-white py-20 h-auto w-full overflow-hidden bg-cover bg-center bg-fixed"
+            style="background-image: url('./PNG/bgbuildblur.avif'); ">
             <div class="container mx-auto text-center px-5 max-w-5xl">
-                <h1 class="text-[40px] font-bold mb-4">Unlock the Power of Full-Stack Java Development in Our Training + Certified Internship</h1>
+                <h1 class="text-[40px] font-bold mb-4">Unlock the Power of Full-Stack Java Development in Our Training +
+                    Certified Internship</h1>
                 <p class="text-lg font-light text-[#FFFFFFB3] mb-8">
-                    Join our Training + Certified Internship to unravel the potential of Full-Stack Java Development. 
-                    Immerse yourself in a comprehensive offline program covering front-end essentials and backend mastery with 
-                    <span class="text-yellow-500">Java, Spring MVC & Spring Boot</span>. Gain exclusive hands-on experience with cutting-edge design tools and database 
+                    Join our Training + Certified Internship to unravel the potential of Full-Stack Java Development.
+                    Immerse yourself in a comprehensive offline program covering front-end essentials and backend
+                    mastery with
+                    <span class="text-yellow-500">Java, Spring MVC & Spring Boot</span>. Gain exclusive hands-on
+                    experience with cutting-edge design tools and database
                     management techniques, all under the guidance of industry leaders.
                 </p>
             </div>
@@ -256,34 +323,170 @@
         <section class="relative bottom-32 max-w-5xl mx-auto bg-white py-10">
             <div class="container  text-center px-5">
                 <div class="flex justify-center  gap-x-0 flex-wrap ">
-                    <img src="https://cdn.lugc.link/59f5e07b-e7f8-4db9-a777-a805d839ae8a/-/preview/109x52/-/format/auto/" alt="Oracle logo" class="h-16">
-                    <img src="https://cdn.lugc.link/47778464-f08a-4add-b57b-1630761ba779/-/preview/109x52/-/format/auto/" alt="Apache logo" class="h-16">
-                    <img src="https://cdn.lugc.link/65e6ca59-1ce4-43c9-937c-e6d118b035c3/-/preview/109x52/-/format/auto/" alt="MySQL logo" class="h-16">
-                    <img src="https://cdn.lugc.link/cbf4033c-697b-481a-b1fe-bebcfa19cf80/-/preview/109x52/-/format/auto/" alt="Log4j logo" class="h-16">
-                    <img src="https://cdn.lugc.link/167c29b4-ecdc-4b57-9cec-371481d78184/-/preview/109x52/-/format/auto/" alt="JUnit logo" class="h-16">
-                    <img src="https://cdn.lugc.link/1a4b0eae-1490-4872-a726-9ee1dd025c9c/-/preview/109x52/-/format/auto/" alt="Thymeleaf logo" class="h-16">
-                    <img src="https://cdn.lugc.link/9c54144d-8a06-4ee3-be16-05aacdf5da98/-/preview/109x52/-/format/auto/" alt="Angular logo" class="h-16">
-                    <img src="https://cdn.lugc.link/544ab26e-c939-488d-b3be-b1b4c3f2b0c2/-/preview/109x52/-/format/auto/" alt="Hibernate logo" class="h-16">
-                    <img src="https://cdn.lugc.link/0c42738f-1688-4066-b48b-4ae1253ba6c0/-/preview/109x52/-/format/auto/" alt="Spring logo" class="h-16">
-                    <img src="https://cdn.lugc.link/f4f51002-a08f-4c56-897b-b9805d362476/-/preview/109x52/-/format/auto/" alt="Maven logo" class="h-16">
-                    <img src="https://cdn.lugc.link/56d7038a-01fd-4ad9-b21a-27c777533551/-/preview/109x52/-/format/auto/" alt="Git logo" class="h-16">
-                    <img src="https://cdn.lugc.link/d5d36a2b-3180-44eb-8f0a-05a27b9ad3ef/-/preview/109x52/-/format/auto/" alt="JavaScript logo" class="h-16">
-                    <img src="https://cdn.lugc.link/89cae92c-804e-4a1c-93f3-dd99b5866c81/-/preview/109x52/-/format/auto/" alt="REST API logo" class="h-16">
-                    <img src="https://cdn.lugc.link/fc32844e-d1ca-406b-a462-a0fb2ee43d8f/-/preview/109x52/-/format/auto/" alt="Servlets & JSP logo" class="h-16">
+                    <img src="https://cdn.lugc.link/59f5e07b-e7f8-4db9-a777-a805d839ae8a/-/preview/109x52/-/format/auto/"
+                        alt="Oracle logo" class="h-16">
+                    <img src="https://cdn.lugc.link/47778464-f08a-4add-b57b-1630761ba779/-/preview/109x52/-/format/auto/"
+                        alt="Apache logo" class="h-16">
+                    <img src="https://cdn.lugc.link/65e6ca59-1ce4-43c9-937c-e6d118b035c3/-/preview/109x52/-/format/auto/"
+                        alt="MySQL logo" class="h-16">
+                    <img src="https://cdn.lugc.link/cbf4033c-697b-481a-b1fe-bebcfa19cf80/-/preview/109x52/-/format/auto/"
+                        alt="Log4j logo" class="h-16">
+                    <img src="https://cdn.lugc.link/167c29b4-ecdc-4b57-9cec-371481d78184/-/preview/109x52/-/format/auto/"
+                        alt="JUnit logo" class="h-16">
+                    <img src="https://cdn.lugc.link/1a4b0eae-1490-4872-a726-9ee1dd025c9c/-/preview/109x52/-/format/auto/"
+                        alt="Thymeleaf logo" class="h-16">
+                    <img src="https://cdn.lugc.link/9c54144d-8a06-4ee3-be16-05aacdf5da98/-/preview/109x52/-/format/auto/"
+                        alt="Angular logo" class="h-16">
+                    <img src="https://cdn.lugc.link/544ab26e-c939-488d-b3be-b1b4c3f2b0c2/-/preview/109x52/-/format/auto/"
+                        alt="Hibernate logo" class="h-16">
+                    <img src="https://cdn.lugc.link/0c42738f-1688-4066-b48b-4ae1253ba6c0/-/preview/109x52/-/format/auto/"
+                        alt="Spring logo" class="h-16">
+                    <img src="https://cdn.lugc.link/f4f51002-a08f-4c56-897b-b9805d362476/-/preview/109x52/-/format/auto/"
+                        alt="Maven logo" class="h-16">
+                    <img src="https://cdn.lugc.link/56d7038a-01fd-4ad9-b21a-27c777533551/-/preview/109x52/-/format/auto/"
+                        alt="Git logo" class="h-16">
+                    <img src="https://cdn.lugc.link/d5d36a2b-3180-44eb-8f0a-05a27b9ad3ef/-/preview/109x52/-/format/auto/"
+                        alt="JavaScript logo" class="h-16">
+                    <img src="https://cdn.lugc.link/89cae92c-804e-4a1c-93f3-dd99b5866c81/-/preview/109x52/-/format/auto/"
+                        alt="REST API logo" class="h-16">
+                    <img src="https://cdn.lugc.link/fc32844e-d1ca-406b-a462-a0fb2ee43d8f/-/preview/109x52/-/format/auto/"
+                        alt="Servlets & JSP logo" class="h-16">
                 </div>
             </div>
         </section>
-        <section class=" y-20">
-            <div id="page4" class="container mx-auto text-center px-5">
+        <section id="curriculum" class=" y-20">
+            <div class="container mx-auto text-center px-5">
                 <h2 class="text-3xl -mt-32 font-bold text-gray-800">Program Curriculum</h2>
             </div>
-            <div class="relative max-w-4xl mx-auto p-8 ">
+            <div class="relative max-w-4xl mx-auto p-8  md:hidden">
+                <div class="absolute left-[55px] top-0 bottom-0 w-[1px] bg-[#E3E3E3] z-0 mb-32"></div>
+                <!-- Topic 1 -->
+                <div class="flex items-start mb-8">
+                    <div class=" flex-shrink-0 text-white rounded-full p-3 -ml-2 mr-0 z-10 top-0 left-0 sticky">
+                        <img src="./PNG/java1.png" class="h-11 w-11">
+                    </div>
+                    <div>
+                        <h1 class=" text-3xl text-[#3A65B3]">Months 1-2</h1>
+                        <h2 class="text-2xl font-bold mt-2 mb-2">Java Fundamentals and Web Development Foundations</h2>
+                        <ul class="list-disc text-lg text-[#727377] pl-5">
+                            <li>Introduction to Java</li>
+                            <li>Basics of Java programming language</li>
+                            <li>Setting up the development environment</li>
+                            <li>Core Java Concepts</li>
+                            <li>Data types, variables, and operators</li>
+                            <li>Control flow statements (if, switch, loops)</li>
+                            <li>Object-oriented programming (OOP) principles</li>
+                            <li>Introduction to MySQL</li>
+                            <li>Database design fundamentals</li>
+                            <li>SQL queries and basic database operations</li>
+                            <li>Introduction to servlets</li>
+                            <li>Handling HTTP requests and responses</li>
+                            <li>JavaServer Pages (JSP)</li>
+                            <li>Creating dynamic web pages</li>
+                            <li>Integrating Java code into JSP</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Topic 2 -->
+                <div class="flex items-start mb-8">
+                    <div class=" flex-shrink-0 text-white rounded-full p-3 mr-1 z-10 top-0 left-0 sticky">
+                        <img src="./PNG/database.png" class="h-11 w-11">
+                    </div>
+                    <div>
+                        <h1 class=" text-3xl text-[#3A65B3]">Months 3-4</h1>
+                        <h2 class="text-2xl font-bold mt-2 mb-2">Database Integration, Spring, and Advanced Web Development</h2>
+                        <ul class="list-disc text-lg text-[#727377] pl-5">
+                            <li>JDBC (Java Database Connectivity)</li>
+                            <li>Connecting Java applications to MySQL</li>
+                            <li>Executing SQL queries from Java</li>
+                            <li>Introduction to Hibernate</li>
+                            <li>ORM concepts</li>
+                            <li>Setting up Hibernate in a project</li>
+                            <li>Hibernate Mapping and Querying</li>
+                            <li>Mapping Java objects to database tables</li>
+                            <li>Hibernate Query Language (HQL)</li>
+                            <li>Building web applications with Spring MVC</li>
+                            <li>Handling forms and validation</li>
+                            <li>Spring Boot & Spring Security</li>
+                            <li>Embedded servers and deployment</li>
+                            <li>Authentication and authorization</li>
+                            <li>Securing web applications with Spring Security</li>
+                            <li>Introduction to REST</li>
+                            <li>REST architecture principles</li>
+                            <li>Building RESTful services in Java</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Topic 3 -->
+                <div class="flex items-start mb-8">
+                    <div class=" flex-shrink-0 text-white rounded-full p-3 -ml-2 mr-0 z-10 top-0 left-0 sticky">
+                        <img src="./PNG/api.png" class="h-11 w-11">
+                    </div>
+                    <div>
+                        <h1 class=" text-3xl text-[#3A65B3]">Months 5</h1>
+                        <h2 class="text-2xl font-bold mt-2 mb-2">Front-End Technologies, Tools, and Testing</h2>
+                        <ul class="list-disc text-lg text-[#727377] pl-5">
+                            <li>JDBC (Java Database Connectivity)</li>
+                            <li>Connecting Java applications to MySQL</li>
+                            <li>Executing SQL queries from Java</li>
+                            <li>Introduction to Hibernate</li>
+                            <li>ORM concepts</li>
+                            <li>Setting up Hibernate in a project</li>
+                            <li>Hibernate Mapping and Querying</li>
+                            <li>Mapping Java objects to database tables</li>
+                            <li>Hibernate Query Language (HQL)</li>
+                            <li>Building web applications with Spring MVC</li>
+                            <li>Handling forms and validation</li>
+                            <li>Spring Boot & Spring Security</li>
+                            <li>Embedded servers and deployment</li>
+                            <li>Authentication and authorization</li>
+                            <li>Securing web applications with Spring Security</li>
+                            <li>Introduction to REST</li>
+                            <li>REST architecture principles</li>
+                            <li>Building RESTful services in Java</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex  items-start mb-8">
+                    <div class=" flex-shrink-0 text-white rounded-full p-3 -ml-2 mr-0 z-10 top-0 left-0 sticky">
+                        <img src="./PNG/interview.png" class="h-11 w-11">
+                    </div>
+                    <div>
+                        <h1 class=" text-3xl text-[#3A65B3]">Months 6</h1>
+                        <h2 class="text-2xl font-semibold">Hands-on Live Projects, also interview preparation and professional development.</h2>
+                        <ul class="list-disc text-lg text-[#727377] pl-5">
+                            <li>Project Definition: Clearly define scope, objectives, and requirements.</li>
+                            <li>Team Formation: Establish teams, assign roles.</li>
+                            <li>Project Planning: Develop detailed plan with timelines and deliverables.</li>
+                            <li>Development and Integration: Implement using Java, Spring, Hibernate; integrate front-end and back-end for seamless communication.</li>
+                            <li>Testing, Debugging, and Documentation: Conduct thorough testing, resolve issues, optimize performance, and create comprehensive project documentation.</li>
+                            <li>Basics of Interview Preparation</li>
+                            <li>Mail Drafting</li>
+                            <li>Resume Building</li>
+                            <li>Communication Skills</li>
+                            <li>HR Round Preparation</li>
+                            <li>Mock Interviews (Technical & HR)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex items-start mb-8">
+                    <div class=" text-white rounded-full p-3 mr-4 z-10">
+                        <img src="https://images.assets-landingi.com/xAd3XgbyzycNiyTx/exit_b_01.svg" class="relative left-0 h-6 w-6">
+                    </div>
+                    <div>
+                        <h2 class="text-lg text-[#727377] mb-2">Java Expertise Unlocked! 🚀<br> 👏Congratulations</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="relative max-w-4xl mx-auto p-8 hidden md:block">
                 <div class="absolute left-[462px] top-0 bottom-0 w-[1px] bg-[#E3E3E3] z-0 mt-16 mb-32"></div>
 
                 <div class="flex items-start mb-8">
-                    <div class="max-w-sm mr-6 text-right  sticky top-0 left-0">
-                        <h1 class=" text-3xl md:text-2xl text-[#3A65B3]">Months 1-2</h1>
-                        <h2 class="text-2xl md:text-2xl font-semibold">Java Fundamentals and Web Development Foundations</h2>
+                    <div class="max-w-sm mr-6 text-right top-0 left-0 sticky">
+                        <h1 class=" text-3xl text-[#3A65B3]">Months 1-2</h1>
+                        <h2 class="text-2xl font-semibold">Java Fundamentals and Web Development Foundations</h2>
                     </div>
                     <div class="sticky top-0 left-0 text-white -ml-3  mr-2 z-10">
                         <img src="./PNG/java1.png" class="h-20 w-20">
@@ -310,11 +513,11 @@
                 </div>
                 
                 <div class="flex items-start mb-8">
-                    <div class="max-w-sm mr-6 text-right  sticky top-0 left-0">
+                    <div class="max-w-sm mr-6 text-right top-0 left-0 sticky">
                         <h1 class=" text-3xl text-[#3A65B3]">Month 3-4</h1>
                         <h2 class="text-2xl font-semibold">Database Integration, Spring, and Advanced Web Development</h2>
                     </div>
-                    <div class="sticky top-0 left-0 text-white ml-1  mr-2 z-10">
+                    <div class="sticky top-0 left-0 text-white -ml-1  mr-2 z-10">
                         <img src="./PNG/database.png" class="h-20 w-20">
                     </div>
                     <div>
@@ -340,11 +543,9 @@
                         </ul>
                     </div>
                 </div>
-                
-                
 
                 <div class="flex items-start mb-8">
-                    <div class="max-w-sm mr-6 text-right sticky top-0 left-0">
+                    <div class="max-w-sm mr-6 text-right top-0 left-0 sticky">
                         <h1 class=" text-3xl text-[#3A65B3]">Month 5</h1>
                         <h2 class="text-2xl font-semibold">Front-End Technologies, Tools, and Testing</h2>
                     </div>
@@ -374,7 +575,7 @@
                 </div>
                 
                 <div class="flex items-start mb-8">
-                    <div class="max-w-sm mr-6 text-right  sticky top-0 left-0">
+                    <div class="max-w-sm mr-6 text-right top-0 left-0 sticky">
                         <h1 class=" text-3xl text-[#3A65B3]">Month 6</h1>
                         <h2 class="text-2xl font-semibold">Hands-on Live Projects, Interview Preparation and Professional Development.</h2>
                     </div>
@@ -398,17 +599,17 @@
                     </div>
                 </div>
                 <div class="flex items-start mb-8">
-                    <div class="max-w-sm flex-grow  mr-6 text-right  sticky top-0 left-0"></div>
+                    <div class="max-w-sm flex-grow  mr-6 text-right"></div>
                     
                     
-                    <div class=" text-white rounded-full p-3 mr-4 z-10 flex items-center justify-center ">
+                    <div class=" text-white rounded-full p-3 mr-4 z-10 flex items-center justify-center">
                         <img src="https://images.assets-landingi.com/xAd3XgbyzycNiyTx/exit_b_01.svg" class=" ml-6 h-6 w-6">
                     </div>
                     
                     
                     <div class="flex-1">
                         <h2 class="text-lg text-[#727377] mb-2">
-                            Java Expertise Unlocked!  🚀<br> 👏Congratulations
+                            Java Expertise Unlocked! 🚀<br> 👏Congratulations
                         </h2>
                     </div>
                 </div>
@@ -416,362 +617,453 @@
             </div>
         </section>
     </div>
-<!--timmer--> 
-<div class="min-h-[50vh] w-full overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('./PNG/bg.png'); background-position: bottom;">
-    <div class="foot  p-6 mt-6">
-        <div class="relative w-full max-w-3xl mx-auto mt-6">
-            <!-- This is the bottom div -->
-            <div class="w-full px-6 shadow-2xl rounded-lg text-center items-center justify-center border border-gray-300 mt-6 ">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl text-white mt-[12%]">
-                    🎓 Join the Achievers: Unlock the Power of 
-                    <span class="text-2xl md:text-3xl lg:text-4xl text-yellow-500">Full-Stack Java Development</span> in Our Certified Training!
-                </h1>
-                <br>
-                <button onclick="scrollToSection('home')" class="w-auto h-auto relative mt-5 text-center bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 focus:outline-none animate-bounce">
-                    <span class="text-lg md:text-xl lg:text-2xl">👆START THE JOURNEY TO SUCCESS! 🚀</span>
-                </button>
-            </div>
-    
-            <!-- This is the overlapping div -->
-            <div class="flex border border-gray-200 p-4 rounded-lg text-lg md:text-xl lg:text-6xl absolute -top-11 left-1/2 transform -translate-x-1/2 z-10 text-white bg-[#231f20] space-x-5 md:space-x-11">
-                <div class="flex flex-col items-center">
-                    <span id="days" class="countdown">07</span>
-                    <span class="text-sm">Days</span>
+    <!--timmer-->
+    <div class="min-h-[50vh] w-full overflow-hidden bg-cover bg-center bg-fixed"
+        style="background-image: url('./PNG/bg.png'); background-position: bottom;">
+        <div class="foot  p-6 mt-6">
+            <div class="relative w-full max-w-3xl mx-auto mt-6">
+                <!-- This is the bottom div -->
+                <div
+                    class="w-full px-6 shadow-2xl rounded-lg text-center items-center justify-center border border-gray-300 mt-6 ">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl text-white mt-[12%]">
+                        🎓 Join the Achievers: Unlock the Power of
+                        <span class="text-2xl md:text-3xl lg:text-4xl text-yellow-500">Full-Stack Java
+                            Development</span> in Our Certified Training!
+                    </h1>
+                    <br>
+                    <button onclick="scrollToSection('home')"
+                        class="w-auto h-auto relative mt-5 text-center bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 focus:outline-none animate-bounce">
+                        <span class="text-lg md:text-xl lg:text-2xl">👆START THE JOURNEY TO SUCCESS! 🚀</span>
+                    </button>
                 </div>
-                <div class="flex flex-col items-center">
-                    <span id="hours" class="countdown">19</span>
-                    <span class="text-sm">Hours</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <span id="minutes" class="countdown">26</span>
-                    <span class="text-sm">Minutes</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <span id="seconds" class="countdown">13</span>
-                    <span class="text-sm">Seconds</span>
+
+                <!-- This is the overlapping div -->
+                <div
+                    class="flex border border-gray-200 p-4 rounded-lg text-lg md:text-xl lg:text-6xl absolute -top-11 left-1/2 transform -translate-x-1/2 z-10 text-white bg-[#231f20] space-x-5 md:space-x-11">
+                    <div class="flex flex-col items-center">
+                        <span id="days" class="countdown">07</span>
+                        <span class="text-sm">Days</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span id="hours" class="countdown">19</span>
+                        <span class="text-sm">Hours</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span id="minutes" class="countdown">26</span>
+                        <span class="text-sm">Minutes</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span id="seconds" class="countdown">13</span>
+                        <span class="text-sm">Seconds</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>  
 
 
     <div class=" mt-8 ">
-        <h1 class="text-[40px] mb-8 text-center font-semibold">To Whom this <span class="text-yellow-500">Training + Internship</span> for?</h1>
-        <div class=" max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  gap-x-32 gap-y-8  md:text-xl  p-7">
+        <h1 class="text-[40px] mb-8 text-center font-semibold">To Whom this <span class="text-yellow-500">Training +
+                Internship</span> for?</h1>
+        <div
+            class=" max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  gap-x-32 gap-y-8  md:text-xl  p-7">
             <div class="zoom-effect1 text-center md:text-left">
                 <h2 class="text-3xl font-bold mb-2">MCA, MSc Computer Science & Engineering Students</h2>
-                <p class="text-lg text-[#828282]">Tailored for Master of Computer Applications (MCA) and Master of Science (MSc) students specializing in Computer Science & Engineering. The program offers a structured and hands-on approach to complement academic learning.</p>
+                <p class="text-lg text-[#828282]">Tailored for Master of Computer Applications (MCA) and Master of
+                    Science (MSc) students specializing in Computer Science & Engineering. The program offers a
+                    structured and hands-on approach to complement academic learning.</p>
             </div>
             <div class="zoom-effect1 text-center md:text-left">
                 <h2 class="text-3xl font-bold mb-2">Aspiring JavaDevelopers</h2>
-                <p class="text-lg text-[#828282]">Geared towards individuals who aspire to begin a career in Java development. The program is designed to impart practical skills and knowledge necessary for a successful start in the field.</p>
+                <p class="text-lg text-[#828282]">Geared towards individuals who aspire to begin a career in Java
+                    development. The program is designed to impart practical skills and knowledge necessary for a
+                    successful start in the field.</p>
             </div>
             <div class="zoom-effect1 text-center md:text-left">
                 <h2 class="text-3xl font-bold mb-2">College Students and Recent Graduates</h2>
-                <p class="text-lg text-[#828282]">Ideal for students currently pursuing a degree in computer science or related fields, as well as recent graduates. The curriculum enhances programming skills and bridges the gap between academic learning and industry requirements.</p>
+                <p class="text-lg text-[#828282]">Ideal for students currently pursuing a degree in computer science or
+                    related fields, as well as recent graduates. The curriculum enhances programming skills and bridges
+                    the gap between academic learning and industry requirements.</p>
             </div>
             <div class="zoom-effect1 text-center md:text-left">
                 <h2 class="text-3xl font-bold mb-2">Professionals Seeking Career Transition</h2>
-                <p class="text-lg text-[#828282]">Tailored for professionals from other IT domains or programming languages who aim to transition into Java development. It provides a comprehensive and practical foundation for a successful career change.</p>
+                <p class="text-lg text-[#828282]">Tailored for professionals from other IT domains or programming
+                    languages who aim to transition into Java development. It provides a comprehensive and practical
+                    foundation for a successful career change.</p>
             </div>
             <div class="zoom-effect1 text-center md:text-left">
                 <h2 class="text-3xl font-bold mb-2">Self-Learners and Enthusiasts</h2>
-                <p class="text-lg text-[#828282]">Suited for self-driven learners with a passion for programming, especially in Java. The program caters to individuals eager to enhance their skills through a hands-on and immersive learning experience.</p>
+                <p class="text-lg text-[#828282]">Suited for self-driven learners with a passion for programming,
+                    especially in Java. The program caters to individuals eager to enhance their skills through a
+                    hands-on and immersive learning experience.</p>
             </div>
             <div class="zoom-effect1 text-center md:text-left">
                 <h2 class="text-3xl font-bold mb-2">Those Preparing for Java Certification</h2>
-                <p class="text-lg text-[#828282]">Specifically designed for individuals preparing to pursue Oracle Java Certification. The program offers a robust preparation curriculum, ensuring participants are well-equipped for the certification exam.</p>
+                <p class="text-lg text-[#828282]">Specifically designed for individuals preparing to pursue Oracle Java
+                    Certification. The program offers a robust preparation curriculum, ensuring participants are
+                    well-equipped for the certification exam.</p>
             </div>
-            
+
         </div>
     </div>
     <div class="bg-[#EFF7FE] mt-12 mb-11 p-8">
-        <h1 class="text-[40px] mb-8 text-center font-semibold">YSM Training + Internship Program <span class="text-yellow-500">Highlights</span></h1>
+        <h1 class="text-[40px] mb-8 text-center font-semibold">YSM Training + Internship Program <span
+                class="text-yellow-500">Highlights</span></h1>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-x-10 gap-y-16 mx-auto max-w-5xl mb-12">
-            
+
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/39432268-c5de-48aa-bf52-854266f42372/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/39432268-c5de-48aa-bf52-854266f42372/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Comprehensive Java Curriculum</h2>
-                <p class="text-sm text-[#333333] font-light">Covering core and advanced Java concepts, databases, web development, and popular frameworks.</p>
+                <p class="text-sm text-[#333333] font-light">Covering core and advanced Java concepts, databases, web
+                    development, and popular frameworks.</p>
             </div>
 
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/92bbf6b7-6eb7-4ac7-b27b-c3262eec02bc/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/92bbf6b7-6eb7-4ac7-b27b-c3262eec02bc/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Expert-Led Learning</h2>
-                <p class="text-sm text-[#333333] font-light">Learn from experienced professionals working in MNCs, gaining insights from industry practitioners.</p>
+                <p class="text-sm text-[#333333] font-light">Learn from experienced professionals working in MNCs,
+                    gaining insights from industry practitioners.</p>
             </div>
 
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/0b48a116-1aa0-49f1-8e2d-e11bdd191d95/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/0b48a116-1aa0-49f1-8e2d-e11bdd191d95/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Practical Application</h2>
-                <p class="text-sm text-[#333333] font-light">Engage in live projects and hackathons to apply theoretical knowledge to real-world scenarios.</p>
+                <p class="text-sm text-[#333333] font-light">Engage in live projects and hackathons to apply theoretical
+                    knowledge to real-world scenarios.</p>
             </div>
 
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/abccee95-b0cc-470c-9535-d82530c44acc/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/abccee95-b0cc-470c-9535-d82530c44acc/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Job Assistance</h2>
-                <p class="text-sm text-[#333333] font-light">Get full job help with resume building, interview prep, and placement support.</p>
+                <p class="text-sm text-[#333333] font-light">Get full job help with resume building, interview prep, and
+                    placement support.</p>
             </div>
 
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/2c056c32-9b3e-4489-b48f-ec86ecef00d5/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/2c056c32-9b3e-4489-b48f-ec86ecef00d5/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Industry Referrals</h2>
-                <p class="text-sm text-[#333333] font-light">Access opportunities for industry referrals, enhancing the chances of securing job placements.</p>
+                <p class="text-sm text-[#333333] font-light">Access opportunities for industry referrals, enhancing the
+                    chances of securing job placements.</p>
             </div>
 
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/7225104d-694c-4632-99e6-a097477cd2fd/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/7225104d-694c-4632-99e6-a097477cd2fd/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Hands-On Coding Experience</h2>
-                <p class="text-sm text-[#333333] font-light">Solve over 100 coding exercises and gain hands-on experience in Java development.</p>
+                <p class="text-sm text-[#333333] font-light">Solve over 100 coding exercises and gain hands-on
+                    experience in Java development.</p>
             </div>
-            
+
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/29b9e81b-b02f-45e1-8aae-927503d0350c/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/29b9e81b-b02f-45e1-8aae-927503d0350c/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Best Practices</h2>
-                <p class="text-sm text-[#333333] font-light">Learn Java best practices from a professional developer with extensive industry experience.</p>
+                <p class="text-sm text-[#333333] font-light">Learn Java best practices from a professional developer
+                    with extensive industry experience.</p>
             </div>
 
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/54e1bdf4-f0ce-45b3-8209-69e0a29937fb/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/54e1bdf4-f0ce-45b3-8209-69e0a29937fb/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Proficiency in Java 17</h2>
-                <p class="text-sm text-[#333333] font-light">Become proficient in the latest Java version (Java 17) and gain skills applicable to older versions like Java 11 and Java 8.</p>
+                <p class="text-sm text-[#333333] font-light">Become proficient in the latest Java version (Java 17) and
+                    gain skills applicable to older versions like Java 11 and Java 8.</p>
             </div>
 
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/7bebd0b5-0312-40aa-87e0-27db5ef737c0/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/7bebd0b5-0312-40aa-87e0-27db5ef737c0/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Advanced Java Concepts</h2>
-                <p class="text-sm text-[#333333] font-light">Acquire knowledge of advanced Java concepts applicable to web development, and automation.</p>
+                <p class="text-sm text-[#333333] font-light">Acquire knowledge of advanced Java concepts applicable to
+                    web development, and automation.</p>
             </div>
 
             <div class="bg-white pt-6 p-3 text-center ">
-                <img src="https://cdn.lugc.link/0adf3a61-b238-4b3f-806a-a0ad1bed5ccc/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/0adf3a61-b238-4b3f-806a-a0ad1bed5ccc/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Versatility for Career Paths</h2>
-                <p class="text-sm text-[#333333] font-light">Gain skills for web development, DevOps, ML, AI, Data Science, and more career paths.</p>
+                <p class="text-sm text-[#333333] font-light">Gain skills for web development, DevOps, ML, AI, Data
+                    Science, and more career paths.</p>
             </div>
 
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/300cc88a-44e7-4391-92d8-9a74126c1e30/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/300cc88a-44e7-4391-92d8-9a74126c1e30/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Efficient Learning Pace</h2>
-                <p class="text-sm text-[#333333] font-light">Acquire core Java skills needed for Java developer positions in a focused and efficient 6-month duration.</p>
+                <p class="text-sm text-[#333333] font-light">Acquire core Java skills needed for Java developer
+                    positions in a focused and efficient 6-month duration.</p>
             </div>
 
             <div class="bg-white pt-6 p-3 text-center">
-                <img src="https://cdn.lugc.link/51073d88-f444-4fc6-9a30-64844cb890a3/-/preview/50x50/-/format/auto/" alt="" class="mx-auto mb-4">
+                <img src="https://cdn.lugc.link/51073d88-f444-4fc6-9a30-64844cb890a3/-/preview/50x50/-/format/auto/"
+                    alt="" class="mx-auto mb-4">
                 <h2 class="text-xl font-semibold mb-2">Oracle Java Cert. Preparation</h2>
-                <p class="text-sm text-[#333333] font-light">Be prepared to sit for and pass the Oracle Java Certificate exam, demonstrating a high level of proficiency.</p>
+                <p class="text-sm text-[#333333] font-light">Be prepared to sit for and pass the Oracle Java Certificate
+                    exam, demonstrating a high level of proficiency.</p>
             </div>
 
         </div>
     </div>
 
-    <div class="min-h-screen w-full overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('./PNG/bg.png'); background-position: bottom;">
+    <div class="min-h-screen w-full overflow-hidden bg-cover bg-center bg-fixed"
+        style="background-image: url('./PNG/bg.png'); background-position: bottom;">
         <div class="max-w-4xl relative mx-auto py-10">
-            <h1 class="text-4xl font-bold text-white text-center mb-8">Success Stories: <span class="text-yellow-400">Our Achievers</span> 🌟</h1>
+            <h1 class="text-4xl font-bold text-white text-center mb-8">Success Stories: <span
+                    class="text-yellow-400">Our Achievers</span> 🌟</h1>
             <div class="mb-32 relative">
                 <div class="bg-white text-black mb-8 h-[150px] flex p-6 z-50 relative">
-                    <img src="https://cdn.lugc.link/9d46f610-04fc-49cf-9bb3-cb61f4fcd2a8/-/preview/150x150/-/format/auto/" class="-ml-6 -my-6 mr-6">
+                    <img src="https://cdn.lugc.link/9d46f610-04fc-49cf-9bb3-cb61f4fcd2a8/-/preview/150x150/-/format/auto/"
+                        class="-ml-6 -my-6 mr-6">
                     <div>
-                        <p class="mb-4">"YSM's internship was beyond my expectations. As an Engineering student, the structured approach fit seamlessly with my academics. Insights from industry pros broadened my view, and now I'm all set to dive into Java development."</p>
+                        <p class="mb-4">"YSM's internship was beyond my expectations. As an Engineering student, the
+                            structured approach fit seamlessly with my academics. Insights from industry pros broadened
+                            my view, and now I'm all set to dive into Java development."</p>
                     </div>
                 </div>
-                <div class="absolute -bottom-[70px] -right-7 h-[150px] w-56 border border-white content-end text-white p-2">
+                <div
+                    class="absolute -bottom-[70px] -right-7 h-[150px] w-56 border border-white content-end text-white p-2">
                     <p class="font-bold">- Shreekant Wadkar</p>
                     <p class="">Datamatics, Mumbai</p>
                 </div>
             </div>
-    
+
             <div class="mb-32 relative">
                 <div class="bg-white text-black mb-8 h-[150px] flex p-6 z-50 relative">
-                    <img src="https://cdn.lugc.link/288453a4-f54a-4556-9f8b-fd381e774b37/-/preview/150x150/-/format/auto/" class="-ml-6 -my-6 mr-6">
+                    <img src="https://cdn.lugc.link/288453a4-f54a-4556-9f8b-fd381e774b37/-/preview/150x150/-/format/auto/"
+                        class="-ml-6 -my-6 mr-6">
                     <div>
-                        <p class="mb-4">"Datamatics Mumbai welcomed me after YSM's Java Internship. The rigorous exercises and industry insights laid a strong foundation. I confidently navigate Java development, all thanks to YSM."</p>
+                        <p class="mb-4">"Datamatics Mumbai welcomed me after YSM's Java Internship. The rigorous
+                            exercises and industry insights laid a strong foundation. I confidently navigate Java
+                            development, all thanks to YSM."</p>
                     </div>
                 </div>
-                <div class="absolute -bottom-[70px] -right-7 h-[150px] w-56 border border-white content-end text-white p-2">
+                <div
+                    class="absolute -bottom-[70px] -right-7 h-[150px] w-56 border border-white content-end text-white p-2">
                     <p class="font-bold">- Prem Patil</p>
                     <p class="">Datamatics, Mumbai</p>
                 </div>
             </div>
-    
+
             <div class="mb-32 relative">
                 <div class="bg-white text-black mb-8 h-[150px] flex p-6 z-50 relative">
-                    <img src="https://cdn.lugc.link/e920fb3a-d237-4e77-a5ae-27fd1362ae28/-/preview/150x150/-/format/auto/" class="-ml-6 -my-6 mr-6">
+                    <img src="https://cdn.lugc.link/e920fb3a-d237-4e77-a5ae-27fd1362ae28/-/preview/150x150/-/format/auto/"
+                        class="-ml-6 -my-6 mr-6">
                     <div>
                         <p class="mb-4">
-                            "YSM's Java Internship was a career game-changer. The hands-on approach and live projects turned theory into real-world skills. The comprehensive curriculum not only gave me a solid skill set but also played a key role in landing a great position at Capgemini, Mumbai."</p>
+                            "YSM's Java Internship was a career game-changer. The hands-on approach and live projects
+                            turned theory into real-world skills. The comprehensive curriculum not only gave me a solid
+                            skill set but also played a key role in landing a great position at Capgemini, Mumbai."</p>
                     </div>
                 </div>
-                <div class="absolute -bottom-[70px] -right-7 h-[150px] w-56 border border-white content-end text-white p-2">
+                <div
+                    class="absolute -bottom-[70px] -right-7 h-[150px] w-56 border border-white content-end text-white p-2">
                     <p class="font-bold">- Harish Patil</p>
                     <p class="">Capgemini, Mumbai</p>
                 </div>
             </div>
-    
+
             <div class="mb-32 relative">
                 <div class="bg-white text-black mb-8 h-[150px] flex p-6 z-50 relative">
-                    <img src="https://cdn.lugc.link/b2d86d29-9e6d-4bee-8789-ba070f7f4eda/-/preview/150x150/-/format/auto/" class="-ml-6 -my-6 mr-6">
+                    <img src="https://cdn.lugc.link/b2d86d29-9e6d-4bee-8789-ba070f7f4eda/-/preview/150x150/-/format/auto/"
+                        class="-ml-6 -my-6 mr-6">
                     <div>
-                        <p class="mb-4">"YSM's Java Internship opened doors for me. The emphasis on practical skills and industry best practices was a game-changer."</p>
+                        <p class="mb-4">"YSM's Java Internship opened doors for me. The emphasis on practical skills and
+                            industry best practices was a game-changer."</p>
                     </div>
                 </div>
-                <div class="absolute -bottom-[70px] -right-7 h-[150px] w-56 border border-white content-end text-white p-2">
+                <div
+                    class="absolute -bottom-[70px] -right-7 h-[150px] w-56 border border-white content-end text-white p-2">
                     <p class="font-bold">- Yogesh Jadhav</p>
                     <p class="">Springer Nature, Pune</p>
                 </div>
             </div>
         </div>
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-16 p-[15%]">
-    
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-16 pl-[14%] md:pl-0">
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "The Java journey at YSM was a treasure trove. The exercises and challenges not only honed my coding skills but also prepped me for the Java Certification. This cert became my ace at Capgemini, Pune."
+                    "The Java journey at YSM was a treasure trove. The exercises and challenges not only honed my coding
+                    skills but also prepped me for the Java Certification. This cert became my ace at Capgemini, Pune."
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/31b2331e-a24c-493f-a44d-7814a5c58de9/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/31b2331e-a24c-493f-a44d-7814a5c58de9/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold">Akshay Deore</p>
                         <p class="text-xs font-light text-[#B9B9B9]">Capgemini, Pune</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "YSM's Web Dev module was a standout! Learning Java for web development, especially with Spring Boot, opened doors to exciting opportunities. A total game-changer during job interviews at RioMade, Pune."
+                    "YSM's Web Dev module was a standout! Learning Java for web development, especially with Spring
+                    Boot, opened doors to exciting opportunities. A total game-changer during job interviews at RioMade,
+                    Pune."
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/ef0e2204-fd6d-4b47-9904-6cbadc1ba58a/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/ef0e2204-fd6d-4b47-9904-6cbadc1ba58a/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold">Akshay Shinde</p>
                         <p class="text-xs font-light text-[#B9B9B9]">Riomed, Pune</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "As a self-learner, YSM's Java Internship was spot on. The hands-on experience and 50+ exercises made learning fun. Now, I'm confidently navigating the Java dev world and looking forward to exciting career prospects."
+                    "As a self-learner, YSM's Java Internship was spot on. The hands-on experience and 50+ exercises
+                    made learning fun. Now, I'm confidently navigating the Java dev world and looking forward to
+                    exciting career prospects."
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/bfaea369-ffaa-4843-b330-8a07a7b6c409/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/bfaea369-ffaa-4843-b330-8a07a7b6c409/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold">Tejas Kharde</p>
                         <p class="text-xs font-light text-[#B9B9B9]">Riomed, Pune</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "YSM's internship was my bridge to a fulfilling career. The curriculum covered the essentials, and the career advancer support made the transition seamless. Now, thriving at Doshaheen Solutions Pvt. Ltd., Pune!"
+                    "YSM's internship was my bridge to a fulfilling career. The curriculum covered the essentials, and
+                    the career advancer support made the transition seamless. Now, thriving at Doshaheen Solutions Pvt.
+                    Ltd., Pune!"
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/849115eb-ceed-4b49-8523-ef498223300b/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/849115eb-ceed-4b49-8523-ef498223300b/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold ">Bhagyshree Dhumal</p>
                         <p class="text-xs font-light text-[#B9B9B9]">Doshaheen Solutions, Pune</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "YSM's focus on industry best practices is unmatched. It's not just about Java; it's about real-world projects. This insight is now the cornerstone of my approach at MindNerves Technology, Pune."
+                    "YSM's focus on industry best practices is unmatched. It's not just about Java; it's about
+                    real-world projects. This insight is now the cornerstone of my approach at MindNerves Technology,
+                    Pune."
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/8ae795b4-0c54-4f2a-b287-18ae88698ae7/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/8ae795b4-0c54-4f2a-b287-18ae88698ae7/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold ">Gaurav Bhirud</p>
                         <p class="text-xs font-light text-[#B9B9B9]">MindNerves Technology, Pune</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "YSM's internship was my gateway to software development. Exposure to Java frameworks gave me an edge. Practical skills and the YSM name played a role in landing a position at Orion Innovation, Chennai."
+                    "YSM's internship was my gateway to software development. Exposure to Java frameworks gave me an
+                    edge. Practical skills and the YSM name played a role in landing a position at Orion Innovation,
+                    Chennai."
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/cc3f1637-5b78-4e85-b9d5-d3c5619be02d/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/cc3f1637-5b78-4e85-b9d5-d3c5619be02d/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold ">Kajol Kangane</p>
                         <p class="text-xs font-light text-[#B9B9B9]">Orion Innovation, Chennai</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "YSM's internship turbocharged my Java career. Mastering Java development was a game-changer. Live projects enhanced my portfolio, setting me apart in the job market. Grateful to YSM for the opportunities at Volttic EV Charging, Noida!"
+                    "YSM's internship turbocharged my Java career. Mastering Java development was a game-changer. Live
+                    projects enhanced my portfolio, setting me apart in the job market. Grateful to YSM for the
+                    opportunities at Volttic EV Charging, Noida!"
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/0cc0f9e5-f46a-4806-9dee-ecdc80570dfd/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/0cc0f9e5-f46a-4806-9dee-ecdc80570dfd/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold ">Supriya Mahale</p>
                         <p class="text-xs font-light text-[#B9B9B9]">Volttic Electric Solution, Noida</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "Grateful for YSM's Java Internship! It transformed my skills. Now, I contribute to healthcare tech at TRIARQ Health India, Nashik."
+                    "Grateful for YSM's Java Internship! It transformed my skills. Now, I contribute to healthcare tech
+                    at TRIARQ Health India, Nashik."
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/4f826339-3bac-4f1f-a36e-d5a88db7e7ec/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/4f826339-3bac-4f1f-a36e-d5a88db7e7ec/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold ">Swapnil Ahire</p>
                         <p class="text-xs font-light text-[#B9B9B9]">TRIARQ Health India, Nashik</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "YSM's internship is a career catalyst! Joining Infosys, Pune, was a breeze after gaining hands-on skills and industry insights at YSM."
+                    "YSM's internship is a career catalyst! Joining Infosys, Pune, was a breeze after gaining hands-on
+                    skills and industry insights at YSM."
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/f1261fb8-a622-49b8-a4ec-35d218468eed/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/f1261fb8-a622-49b8-a4ec-35d218468eed/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold ">Sapna Gaikwad</p>
                         <p class="text-xs font-light text-[#B9B9B9]">Infosys, Pune</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "M&M Finance welcomed me post-YSM's Java Internship. The program's depth and mentorship paved the way. Now, I thrive in the dynamic world of M&M Finance"
+                    "M&M Finance welcomed me post-YSM's Java Internship. The program's depth and mentorship paved the
+                    way. Now, I thrive in the dynamic world of M&M Finance"
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/0d192032-8c93-4251-ac85-c40fee38b92b/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/0d192032-8c93-4251-ac85-c40fee38b92b/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold ">Sanket Chavan</p>
                         <p class="text-xs font-light text-[#B9B9B9]">M&M Finance, BKC Mumbai</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "TechBulls SoftTech Pvt Ltd became my workplace after YSM's internship. The real-world projects and certification prep set the foundation for success."
+                    "TechBulls SoftTech Pvt Ltd became my workplace after YSM's internship. The real-world projects and
+                    certification prep set the foundation for success."
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/ea444225-c940-4897-91b0-9f745d71fb46/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/ea444225-c940-4897-91b0-9f745d71fb46/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold ">Mansvi Bhojak</p>
                         <p class="text-xs font-light text-[#B9B9B9]">TechBulls SoftTech, Pune</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="flex flex-col">
                 <div class="flex items-center justify-center w-[300px] h-[250px] px-4 py-10 bg-white text-center">
-                    "Thanks, YSM, for a transformative internship! The Live Project experience was invaluable. Now, I contribute meaningfully to projects at ETP Group, Pune."
+                    "Thanks, YSM, for a transformative internship! The Live Project experience was invaluable. Now, I
+                    contribute meaningfully to projects at ETP Group, Pune."
                 </div>
                 <div class="flex items-center text-[#D7D7D7] font-light my-6">
-                    <img src="https://cdn.lugc.link/ea444225-c940-4897-91b0-9f745d71fb46/-/format/auto/-/stretch/off/-/resize/73x/" alt="Mentor Image" class="rounded-full mr-4">
+                    <img src="https://cdn.lugc.link/ea444225-c940-4897-91b0-9f745d71fb46/-/format/auto/-/stretch/off/-/resize/73x/"
+                        alt="Mentor Image" class="rounded-full mr-4">
                     <div>
                         <p class="text-xl font-bold ">Mansi Ghule</p>
                         <p class="text-xs font-light text-[#B9B9B9]">ETP Group, Pune</p>
@@ -779,35 +1071,39 @@
                 </div>
             </div>
         </div>
-        <div class="foot  w-full overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('./PNG/bg.png'); background-position: bottom; p-6">
+        <div class="foot  w-full overflow-hidden bg-cover bg-center bg-fixed"
+            style="background-image: url('./PNG/bg.png'); background-position: bottom; p-6">
             <div class="relative w-[67%] mx-auto mt-6">
                 <!-- This is the bottom div -->
-                <div class="w-full p-4 shadow-2xl text-center items-center justify-center border border-gray-300 mt-6 bg-[#002642]">
+                <div
+                    class="w-full p-4 shadow-2xl text-center items-center justify-center border border-gray-300 mt-6 bg-[#002642]">
                     <h1 class="text-4xl font-bold text-white mt-6 mb-6">
-                        🎓Join the Achievers: Register Now and 
+                        🎓Join the Achievers: Register Now and
                         <br><span class="text-4xl text-yellow-500">Be the Next Success Story!</span>
                     </h1>
                 </div>
-                <div class="flex relative -top-11 justify-center mt-4"> 
-                    <button onclick="scrollToSection('top')" class="bg-gradient-to-r from-[#001726] to-[#084F76] capitalize text-white px-6 py-2 text-3xl font-semibold border-2 border-white hover-bg-lighten">
+                <div class="flex relative -top-11 justify-center mt-4">
+                    <button onclick="scrollToSection('top')"
+                        class="bg-gradient-to-r from-[#001726] to-[#084F76] capitalize text-white px-6 py-2 text-3xl font-semibold border-2 border-white hover-bg-lighten">
                         👆 Start the Journey to Success! 🚀
                     </button>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
 
-    <h1 class=" text-black text-center text-5xl font-bold">Instructor</h1> 
-    <div class="flex flex-col md:flex-row bg-white text-black p-6 mt-9 mb-3  rounded-lg shadow-3xl font-medium mx-auto w-[90%] md:w-[85%] max-w-5xl">
-        
-        <img src="https://cdn.lugc.link/61ea8d7d-587b-4d62-accc-216357ffc25b/-/preview/254x254/-/format/auto/" alt="Nilesh R. Sonawane"
-             class="w-60 h-60 rounded-lg mx-auto md:mx-0 md:mr-5 mb-4 md:mb-0">
-    
+    <h1 class=" text-black text-center text-5xl font-bold">Instructor</h1>
+    <div
+        class="flex flex-col md:flex-row bg-white text-black p-6 mt-9 mb-3  rounded-lg shadow-3xl font-medium mx-auto w-[90%] md:w-[85%] max-w-5xl">
+
+        <img src="https://cdn.lugc.link/61ea8d7d-587b-4d62-accc-216357ffc25b/-/preview/254x254/-/format/auto/"
+            alt="Nilesh R. Sonawane" class="w-60 h-60 rounded-lg mx-auto md:mx-0 md:mr-5 mb-4 md:mb-0">
+
         <div class="text flex-col">
             <h1 class="text-3xl text-gray-900 px-2 md:px-10">Nilesh R. Sonawane</h1>
             <h2 class="text-2xl text-gray-900 px-2 md:px-10">Software Engineer, 13+ Year Experience in Java</h2>
-            
+
             <div class="flex items-center text-yellow-400 ml-0 md:ml-10 gap-1">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -816,163 +1112,185 @@
                 <i class="fas fa-star-half-alt"></i>
                 <span>(200+ reviews)</span>
             </div>
-    
+
             <p class="text-xl text-gray-500 px-2 md:px-10 w-full md:w-7/5 font-light">
-                Greetings! I'm Nilesh Sonawane, a dedicated engineer, consultant, and trainer with 13+ years in Java, Spring, Hibernate, and Microservices. Join me on a journey to master these technologies, gain practical insights, and excel in high-performance application development.
+                Greetings! I'm Nilesh Sonawane, a dedicated engineer, consultant, and trainer with 13+ years in Java,
+                Spring, Hibernate, and Microservices. Join me on a journey to master these technologies, gain practical
+                insights, and excel in high-performance application development.
             </p>
-    
+
             <div class="grid grid-cols-3 md:grid-cols-6 justify-center  ">
-                <img src="https://cdn.lugc.link/59f5e07b-e7f8-4db9-a777-a805d839ae8a/-/preview/109x52/-/format/auto/" alt="Oracle logo" class="h-10">
-                <img src="https://cdn.lugc.link/47778464-f08a-4add-b57b-1630761ba779/-/preview/109x52/-/format/auto/" alt="Apache logo" class="h-10">
-                <img src="https://cdn.lugc.link/65e6ca59-1ce4-43c9-937c-e6d118b035c3/-/preview/109x52/-/format/auto/" alt="MySQL logo" class="h-10">
-                <img src="https://cdn.lugc.link/cbf4033c-697b-481a-b1fe-bebcfa19cf80/-/preview/109x52/-/format/auto/" alt="Log4j logo" class="h-10">
-                <img src="https://cdn.lugc.link/167c29b4-ecdc-4b57-9cec-371481d78184/-/preview/109x52/-/format/auto/" alt="JUnit logo" class="h-10">
-                <img src="https://cdn.lugc.link/1a4b0eae-1490-4872-a726-9ee1dd025c9c/-/preview/109x52/-/format/auto/" alt="Thymeleaf logo" class="h-10">
-                <img src="https://cdn.lugc.link/9c54144d-8a06-4ee3-be16-05aacdf5da98/-/preview/109x52/-/format/auto/" alt="Angular logo" class="h-10">
-                <img src="https://cdn.lugc.link/544ab26e-c939-488d-b3be-b1b4c3f2b0c2/-/preview/109x52/-/format/auto/" alt="Hibernate logo" class="h-10">
-                <img src="https://cdn.lugc.link/0c42738f-1688-4066-b48b-4ae1253ba6c0/-/preview/109x52/-/format/auto/" alt="Spring logo" class="h-10">
-                <img src="https://cdn.lugc.link/f4f51002-a08f-4c56-897b-b9805d362476/-/preview/109x52/-/format/auto/" alt="Maven logo" class="h-10">
-                <img src="https://cdn.lugc.link/56d7038a-01fd-4ad9-b21a-27c777533551/-/preview/109x52/-/format/auto/" alt="Git logo" class="h-10">
-                <img src="https://cdn.lugc.link/d5d36a2b-3180-44eb-8f0a-05a27b9ad3ef/-/preview/109x52/-/format/auto/" alt="JavaScript logo" class="h-10">
-                <img src="https://cdn.lugc.link/89cae92c-804e-4a1c-93f3-dd99b5866c81/-/preview/109x52/-/format/auto/" alt="REST API logo" class="h-10">
-                <img src="https://cdn.lugc.link/fc32844e-d1ca-406b-a462-a0fb2ee43d8f/-/preview/109x52/-/format/auto/" alt="Servlets & JSP logo" class="h-10">
+                <img src="https://cdn.lugc.link/59f5e07b-e7f8-4db9-a777-a805d839ae8a/-/preview/109x52/-/format/auto/"
+                    alt="Oracle logo" class="h-10">
+                <img src="https://cdn.lugc.link/47778464-f08a-4add-b57b-1630761ba779/-/preview/109x52/-/format/auto/"
+                    alt="Apache logo" class="h-10">
+                <img src="https://cdn.lugc.link/65e6ca59-1ce4-43c9-937c-e6d118b035c3/-/preview/109x52/-/format/auto/"
+                    alt="MySQL logo" class="h-10">
+                <img src="https://cdn.lugc.link/cbf4033c-697b-481a-b1fe-bebcfa19cf80/-/preview/109x52/-/format/auto/"
+                    alt="Log4j logo" class="h-10">
+                <img src="https://cdn.lugc.link/167c29b4-ecdc-4b57-9cec-371481d78184/-/preview/109x52/-/format/auto/"
+                    alt="JUnit logo" class="h-10">
+                <img src="https://cdn.lugc.link/1a4b0eae-1490-4872-a726-9ee1dd025c9c/-/preview/109x52/-/format/auto/"
+                    alt="Thymeleaf logo" class="h-10">
+                <img src="https://cdn.lugc.link/9c54144d-8a06-4ee3-be16-05aacdf5da98/-/preview/109x52/-/format/auto/"
+                    alt="Angular logo" class="h-10">
+                <img src="https://cdn.lugc.link/544ab26e-c939-488d-b3be-b1b4c3f2b0c2/-/preview/109x52/-/format/auto/"
+                    alt="Hibernate logo" class="h-10">
+                <img src="https://cdn.lugc.link/0c42738f-1688-4066-b48b-4ae1253ba6c0/-/preview/109x52/-/format/auto/"
+                    alt="Spring logo" class="h-10">
+                <img src="https://cdn.lugc.link/f4f51002-a08f-4c56-897b-b9805d362476/-/preview/109x52/-/format/auto/"
+                    alt="Maven logo" class="h-10">
+                <img src="https://cdn.lugc.link/56d7038a-01fd-4ad9-b21a-27c777533551/-/preview/109x52/-/format/auto/"
+                    alt="Git logo" class="h-10">
+                <img src="https://cdn.lugc.link/d5d36a2b-3180-44eb-8f0a-05a27b9ad3ef/-/preview/109x52/-/format/auto/"
+                    alt="JavaScript logo" class="h-10">
+                <img src="https://cdn.lugc.link/89cae92c-804e-4a1c-93f3-dd99b5866c81/-/preview/109x52/-/format/auto/"
+                    alt="REST API logo" class="h-10">
+                <img src="https://cdn.lugc.link/fc32844e-d1ca-406b-a462-a0fb2ee43d8f/-/preview/109x52/-/format/auto/"
+                    alt="Servlets & JSP logo" class="h-10">
             </div>
         </div>
     </div>
-    
-    
-<div class="min-h-screen w-full overflow-hidden bg-cover bg-center bg-fixed" style="background-image: url('./PNG/bgbuildblur.avif');"> 
-    <div class="mt-5 w-full max-w-5xl mx-auto p-6  rounded-md text-gray-300 gap-5 glow-effect ">
-        <h1 class="text-3xl md:text-4xl font-semibold mb-4 text-center">Frequently Asked Questions</h1>
-        <p class="text-lg md:text-xl mb-6 ">Get your burning questions answered.</p>
-    <div class=" ">
-        <div class="space-y-4 text-gray-200">
-            <div class="faq-item">
-                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
-                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
-                        <span class="text-lg font-bold text-black">Q 1</span>
+
+
+    <div class="min-h-screen w-full overflow-hidden bg-cover bg-center bg-fixed"
+        style="background-image: url('./PNG/bgbuildblur.avif');">
+        <div class="mt-5 w-full max-w-5xl mx-auto p-6  rounded-md text-gray-300 gap-5 glow-effect ">
+            <h1 class="text-3xl md:text-4xl font-semibold mb-4 text-center">Frequently Asked Questions</h1>
+            <p class="text-lg md:text-xl mb-6 ">Get your burning questions answered.</p>
+            <div class=" ">
+                <div class="space-y-4 text-gray-200">
+                    <div class="faq-item">
+                        <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                                <span class="text-lg font-bold text-black">Q 1</span>
+                            </div>
+                            <div class="flex-1 text-xl md:text-2xl">
+                                What is the duration of the internship program?
+                                <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                            The internship program spans 6 months, providing a comprehensive learning experience.
+                        </p>
                     </div>
-                    <div class="flex-1 text-xl md:text-2xl">
-                        What is the duration of the internship program?
-                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+
+                    <div class="faq-item">
+                        <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                                <span class="text-lg font-bold text-black">Q 2</span>
+                            </div>
+                            <div class="flex-1 text-xl md:text-2xl">
+                                When does the internship start?
+                                <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                            The program is set to commence on January 25, 2025 onwards.
+                        </p>
                     </div>
+
+                    <div class="faq-item">
+                        <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                                <span class="text-lg font-bold text-black">Q 3</span>
+                            </div>
+                            <div class="flex-1 text-xl md:text-2xl">
+                                What does the course curriculum cover?
+                                <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                            The curriculum includes core and advanced Java, SQL, web development, popular frameworks,
+                            and more. Refer to the detailed curriculum for a comprehensive overview.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                                <span class="text-lg font-bold text-black">Q 4</span>
+                            </div>
+                            <div class="flex-1 text-xl md:text-2xl">
+                                Who is the internship designed for?
+                                <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                            The internship caters to MCA, MSc Computer Science & Engineering students, aspiring Java
+                            developers, college students, recent graduates, professionals seeking a career transition,
+                            self-learners, and enthusiasts.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                                <span class="text-lg font-bold text-black">Q 5</span>
+                            </div>
+                            <div class="flex-1 text-xl md:text-2xl">
+                                How does the internship benefit aspiring Java developers?
+                                <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                            Aspiring Java developers gain practical skills and knowledge necessary for a successful
+                            start in the field.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                                <span class="text-lg font-bold text-black">Q 6</span>
+                            </div>
+                            <div class="flex-1 text-xl md:text-2xl">
+                                What is the hands-on experience like during the internship?
+                                <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                            Participants will engage in live projects and hackathons, applying theoretical knowledge to
+                            real-world scenarios.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                                <span class="text-lg font-bold text-black">Q 7</span>
+                            </div>
+                            <div class="flex-1 text-xl md:text-2xl">
+                                Is the program suitable for self-learners and programming enthusiasts?
+                                <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                            Yes, the program is designed to accommodate self-driven learners passionate about
+                            programming, especially in Java.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
+                                <span class="text-lg font-bold text-black">Q 8</span>
+                            </div>
+                            <div class="flex-1 text-xl md:text-2xl">
+                                What support is provided to college students and recent graduates?
+                                <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16 mt-2 text-lg md:text-xl hidden">
+                            The curriculum bridges the gap between academic learning and industry requirements,
+                            enhancing programming skills for a smooth transition.
+                        </p>
+                    </div>
+
                 </div>
-                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
-                    The internship program spans 6 months, providing a comprehensive learning experience.
-                </p>
             </div>
-    
-            <div class="faq-item">
-                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
-                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
-                        <span class="text-lg font-bold text-black">Q 2</span>
-                    </div>
-                    <div class="flex-1 text-xl md:text-2xl">
-                        When does the internship start?
-                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
-                    </div>
-                </div>
-                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
-                    The program is set to commence on January 25, 2025 onwards.
-                </p>
-            </div>
-    
-            <div class="faq-item">
-                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
-                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
-                        <span class="text-lg font-bold text-black">Q 3</span>
-                    </div>
-                    <div class="flex-1 text-xl md:text-2xl">
-                        What does the course curriculum cover?
-                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
-                    </div>
-                </div>
-                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
-                    The curriculum includes core and advanced Java, SQL, web development, popular frameworks, and more. Refer to the detailed curriculum for a comprehensive overview.
-                </p>
-            </div>
-    
-            <div class="faq-item">
-                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
-                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
-                        <span class="text-lg font-bold text-black">Q 4</span>
-                    </div>
-                    <div class="flex-1 text-xl md:text-2xl">
-                        Who is the internship designed for?
-                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
-                    </div>
-                </div>
-                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
-                    The internship caters to MCA, MSc Computer Science & Engineering students, aspiring Java developers, college students, recent graduates, professionals seeking a career transition, self-learners, and enthusiasts.
-                </p>
-            </div>
-    
-            <div class="faq-item">
-                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
-                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
-                        <span class="text-lg font-bold text-black">Q 5</span>
-                    </div>
-                    <div class="flex-1 text-xl md:text-2xl">
-                        How does the internship benefit aspiring Java developers?
-                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
-                    </div>
-                </div>
-                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
-                    Aspiring Java developers gain practical skills and knowledge necessary for a successful start in the field.
-                </p>
-            </div>
-    
-            <div class="faq-item">
-                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
-                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
-                        <span class="text-lg font-bold text-black">Q 6</span>
-                    </div>
-                    <div class="flex-1 text-xl md:text-2xl">
-                        What is the hands-on experience like during the internship?
-                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
-                    </div>
-                </div>
-                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
-                    Participants will engage in live projects and hackathons, applying theoretical knowledge to real-world scenarios.
-                </p>
-            </div>
-    
-            <div class="faq-item">
-                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
-                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
-                        <span class="text-lg font-bold text-black">Q 7</span>
-                    </div>
-                    <div class="flex-1 text-xl md:text-2xl">
-                        Is the program suitable for self-learners and programming enthusiasts?
-                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
-                    </div>
-                </div>
-                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
-                    Yes, the program is designed to accommodate self-driven learners passionate about programming, especially in Java.
-                </p>
-            </div>
-    
-            <div class="faq-item">
-                <div class="flex items-center gap-4 cursor-pointer" onclick="toggleAnswer(this)">
-                    <div class="w-12 h-12 flex justify-center items-center bg-[#badeff] rounded-full">
-                        <span class="text-lg font-bold text-black">Q 8</span>
-                    </div>
-                    <div class="flex-1 text-xl md:text-2xl">
-                        What support is provided to college students and recent graduates?
-                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
-                    </div>
-                </div>
-                <p class="ml-16 mt-2 text-lg md:text-xl hidden">
-                    The curriculum bridges the gap between academic learning and industry requirements, enhancing programming skills for a smooth transition.
-                </p>
-            </div>
-    
         </div>
-    </div>    
     </div>
- </div>   
-   
- 
 
 
 
@@ -990,7 +1308,9 @@
 
 
 
-<!--timmer-->
+
+
+    <!--timmer-->
 
 
 
@@ -1000,72 +1320,74 @@
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
         }
-        
-        
-     // Set the date we're counting down to
-     const countDownDate = new Date("Feb 28, 2025 11:59:59").getTime();
-    
-     // Update the countdown every 1 second
-     const x = setInterval(function() {
-    
-         // Get today's date and time
-         const now = new Date().getTime();
-    
-         // Find the distance between now and the count down date
-         const distance = countDownDate - now;
-    
-         // Time calculations for days, hours, minutes and seconds
-         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-         // Display the result in the elements with corresponding IDs
-         document.getElementById("days").innerHTML = days;
-         document.getElementById("hours").innerHTML = hours;
-         document.getElementById("minutes").innerHTML = minutes;
-         document.getElementById("seconds").innerHTML = seconds;
-    
-         // If the countdown is over, display a message
-         if (distance < 0) {
-             clearInterval(x);
-             document.getElementById("days").innerHTML = "00";
-             document.getElementById("hours").innerHTML = "00";
-             document.getElementById("minutes").innerHTML = "00";
-             document.getElementById("seconds").innerHTML = "00";
-             alert("Countdown has ended!");
-         }
-     }, 1000);
-    
-    
-     function loco(){(function () {
-        const locomotiveScroll = new LocomotiveScroll();
-      })();
-      }
-      loco();
-      
 
-      function toggleAnswer(element) {
-        const answer = element.nextElementSibling;
-        answer.classList.toggle('hidden');
-    }
 
-      function toggleAnswer(element) {
-        const parent = element.parentElement;
-        const answer = parent.querySelector('p');
-        const icon = element.querySelector('i');
-  
-        if (answer.classList.contains('hidden')) {
-          answer.classList.remove('hidden');
-          icon.classList.remove('fa-chevron-down');
-          icon.classList.add('fa-chevron-up');
-        } else {
-          answer.classList.add('hidden');
-          icon.classList.remove('fa-chevron-up');
-          icon.classList.add('fa-chevron-down');
+        // Set the date we're counting down to
+        const countDownDate = new Date("Feb 28, 2025 11:59:59").getTime();
+
+        // Update the countdown every 1 second
+        const x = setInterval(function () {
+
+            // Get today's date and time
+            const now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            const distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the elements with corresponding IDs
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+                alert("Countdown has ended!");
+            }
+        }, 1000);
+
+
+        function loco() {
+            (function () {
+                const locomotiveScroll = new LocomotiveScroll();
+            })();
         }
-      }
+        loco();
+
+
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.classList.toggle('hidden');
+        }
+
+        function toggleAnswer(element) {
+            const parent = element.parentElement;
+            const answer = parent.querySelector('p');
+            const icon = element.querySelector('i');
+
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
     </script>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
 </body>
+
 </html>
