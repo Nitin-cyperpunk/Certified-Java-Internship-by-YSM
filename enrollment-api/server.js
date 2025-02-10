@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection URI - replace with your actual connection string
-const uri = "mongodb://localhost:27017/your_database_name"; // Local MongoDB
+const uri = "mongodb://singhnitin9975:<PMSlzXpCAo4yi8U5>@<hostname>/?ssl=true&replicaSet=atlas-g7z2sa-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0"; // Local MongoDB
 // const uri = "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/your_database_name?retryWrites=true&w=majority"; // MongoDB Atlas
 
 // --- Option 1:  Using Mongoose (Recommended) ---
