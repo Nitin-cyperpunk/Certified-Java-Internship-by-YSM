@@ -1,90 +1,109 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const mongoose = require('mongoose');  // Or const { MongoClient } = require('mongodb'); if not using Mongoose
+const mongoose = require('mongoose');
 
 const app = express();
 const port = 3000;
 
-// Enable CORS (for local development; configure properly in production)
+// Enable CORS
 app.use(cors());
 
 // Parse JSON request bodies
 app.use(bodyParser.json());
 
-// MongoDB Connection URI - replace with your actual connection string
-const uri = "mongodb://singhnitin9975:<PMSlzXpCAo4yi8U5>@<hostname>/?ssl=true&replicaSet=atlas-g7z2sa-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0"; // Local MongoDB
-// const uri = "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/your_database_name?retryWrites=true&w=majority"; // MongoDB Atlas
+// MongoDB Connection URI
+const uri = "mongodb+srv://singhnitin9975:PMSlzXpCAo4yi8U5@cluster0.xxxxxxxx.mongodb.net/enrollmentDB?retryWrites=true&w=majority";
 
-// --- Option 1:  Using Mongoose (Recommended) ---
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("Connected successfully to MongoDB (Mongoose)"))
-  .catch(err => console.error("Failed to connect to MongoDB (Mongoose)", err));
+// Connect to MongoDB
+mongoose.connect(uri)
+  .then(() => console.log("Connected successfully to MongoDB"))
+  .catch(err => console.error("Failed to connect to MongoDB:", err));
 
-// Define a Mongoose Schema and Model (e.g., for Enrollments)
+// Define Enrollment Schema
 const enrollmentSchema = new mongoose.Schema({
-  name: String,
-  phone: String,
-  email: String,
-  city: String,
-  college: String,
-  qualification: String,
-  agree: Boolean
+  name: { type: String, required: true },
+  phone: { type: String, required: true },
+  email: { type: String, required: true },
+  city: { type: String, required: true },
+  college: { type: String, required: true },
+  qualification: { type: String, required: true },
+  agree: { type: Boolean, required: true },
+  createdAt: { type: Date, default: Date.now }
 });
 
+// Create Enrollment Model
 const Enrollment = mongoose.model('Enrollment', enrollmentSchema);
-
-
-// --- Option 2:  Using the MongoDB Driver directly (without Mongoose) ---
-/*
-const { MongoClient } = require('mongodb');  // Uncomment if *not* using Mongoose
-
-const client = new MongoClient(uri);
-
-async function run() {
-  try {
-    await client.connect();
-    console.log("Connected successfully to MongoDB (MongoClient)");
-
-    const db = client.db('your_database_name');  // Replace with your database name
-    const enrollments = db.collection('enrollments'); // Replace with your collection name
-
-    // ... (The app.post('/enroll') route would go here - see below)
-
-  } catch (err) {
-    console.error("Failed to connect to MongoDB", err);
-  }
-}
-
-run().catch(console.dir);
-*/
-
 
 // POST endpoint to handle enrollment data
 app.post('/enroll', async (req, res) => {
   const enrollmentData = req.body;
 
   try {
-    // --- Option 1: Using Mongoose ---
-    const newEnrollment = new Enrollment(enrollmentData);  // Create a new Enrollment document
-    const result = await newEnrollment.save();   // Save it to the database
+    const newEnrollment = new Enrollment(enrollmentData);
+    const result = await newEnrollment.save();
 
-    // --- Option 2: Using the MongoDB Driver directly ---
-    // const result = await enrollments.insertOne(enrollmentData);  // If not using Mongoose
-
-
-    console.log(`Inserted with _id: ${result._id}`);  // Using Mongoose
-    // console.log(`Inserted with _id: ${result.insertedId}`);  // If not using Mongoose
-    res.json({ message: 'Enrollment data saved!', id: result._id }); // Mongoose returns _id
-    // res.json({ message: 'Enrollment data saved!', id: result.insertedId }); // If not using Mongoose
+    console.log(`Enrollment saved with ID: ${result._id}`);
+    res.json({ 
+      success: true,
+      message: 'Enrollment data saved successfully!', 
+      id: result._id 
+    });
 
   } catch (err) {
-    console.error("Error inserting document:", err);
-    res.status(500).json({ error: 'Failed to save enrollment data' });
+    console.error("Error saving enrollment:", err);
+    res.status(500).json({ 
+      success: false,
+      error: 'Failed to save enrollment data',
+      details: err.message 
+    });
   }
 });
 
+// GET endpoint to retrieve all enrollments
+app.get('/enrollments', async (req, res) => {
+  try {
+    const enrollments = await Enrollment.find({}).sort({ createdAt: -1 });
+    res.json({
+      success: true,
+      data: enrollments
+    });
+  } catch (err) {
+    console.error("Error fetching enrollments:", err);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch enrollments',
+      details: err.message
+    });
+  }
+});
 
+// GET endpoint to retrieve a specific enrollment
+app.get('/enrollment/:id', async (req, res) => {
+  try {
+    const enrollment = await Enrollment.findById(req.params.id);
+    if (!enrollment) {
+      return res.status(404).json({
+        success: false,
+        error: 'Enrollment not found'
+      });
+    }
+    res.json({
+      success: true,
+      data: enrollment
+    });
+  } catch (err) {
+    console.error("Error fetching enrollment:", err);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch enrollment',
+      details: err.message
+    });
+  }
+});
+
+// Start the server
 app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${3000}`);
+  console.log(`Server running at http://localhost:${port}`);
 });

@@ -15,26 +15,25 @@ document.addEventListener('DOMContentLoaded', function() {
         const jsonData = JSON.stringify(data);
 
         // Send data to the Node.js endpoint using fetch
-        fetch('http://localhost:3000/enrollment', {  // Replace with your actual URL
+        fetch('http://localhost:3000/enroll', {  // Changed from /enrollments to /enroll
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: jsonData
+            body: JSON.stringify(jsonData)  // Added JSON.stringify()
         })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok: ' + response.status);
-            }
-            return response.json(); // Assuming your server returns JSON
-        })
+        .then(response => response.json())
         .then(data => {
-            console.log('Success:', data);
-            alert('Enrollment data saved!'); // Display success message to the user
+            if (data.success) {
+                alert('Enrollment successful!');
+                form.reset();
+            } else {
+                alert('Error: ' + data.error);
+            }
         })
         .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred while saving enrollment data.'); // Display error message
+            alert('Failed to submit form. Please try again.');
         });
 
     });
