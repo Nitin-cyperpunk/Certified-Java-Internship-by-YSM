@@ -1,14 +1,7 @@
 <?php
+// Database connection
+$conn = new mysqli('localhost', 'root', '', 'testdb');
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "enrollmentDB";
-
-
-$conn = new mysqli('localhost', 'root', '', enrollmentDB);
-
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -18,22 +11,24 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 $city = $_POST['city'];
-$college = $_POST['college'];
+$clg_name = $_POST['clg_name'];
 $qualification = $_POST['qualification'];
-$agree = isset($_POST['agree']) ? 1 : 0;
+$campaign = $_POST['campaign'];
 
-// Prepare and bind
-$stmt = $conn->prepare("INSERT INTO enrollments (name, phone, email, city, college, qualification, agree) VALUES (?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("ssssssi", $name, $phone, $email, $city, $college, $qualification, $agree);
+// Check if the checkbox is checked
+$campaign = isset($_POST['campaign']) ? 'Yes' : 'No';
 
-// Execute the query
+// Insert data into MySQL
+$sql = "INSERT INTO form_data (name, phone, Email, City, Colleges, qualification, campaign) VALUES (?, ?, ?, ?, ?, ?, ?)";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("sssssss", $name, $phone, $email, $city, $clg_name, $qualification, $campaign);
+
 if ($stmt->execute()) {
-    echo "New record created successfully";
+    echo "Data saved successfully!";
 } else {
     echo "Error: " . $stmt->error;
 }
 
-// Close the statement and connection
 $stmt->close();
 $conn->close();
 ?>

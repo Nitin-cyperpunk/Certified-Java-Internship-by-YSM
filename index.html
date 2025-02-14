@@ -154,20 +154,20 @@
 
                     <div class="relative items-center justify-center text-black mt-4 w-[90%] mx-auto">
                         <!-- Form -->
-                        <form id="enrollmentForm" action="form.php" method="post" class="mt-4 w-full space-y-2">
-                            <input type="text" placeholder="Your Name*"
+                        <form  action="form.php" method="post" class="mt-4 w-full space-y-2">
+                            <input type="text"name="name" placeholder="Your Name*"
                                 class="focus:outline-none border border-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] bg-[#FDB926] placeholder:text-[black] placeholder:opacity-100">
-                            <input type="text" placeholder="Your Phone*"
+                            <input type="text" name="phone" placeholder="Your Phone*"
                                 class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
-                            <input type="email" placeholder="Your Email*"
+                            <input type="email" name="email" placeholder="Your Email*"
                                 class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
-                            <input type="text" placeholder="Your City*"
+                            <input type="text" name="city" placeholder="Your City*"
                                 class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
-                            <input type="text" placeholder="College Name*"
+                            <input type="text" name="clg_name" placeholder="College Name*"
                                 class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mb-[0.5rem] placeholder:text-[black] placeholder:opacity-100">
 
                             <!-- Select Dropdown -->
-                            <select
+                            <select name="qualification"
                                 class="focus:outline-none border border-[#FDB926] bg-[#FDB926] rounded-lg px-4 py-[0.35rem] w-full mt-2 text-black">
                                 <option value="" disabled selected>Select education qualification*</option>
                                 <option value="B.Sc. (computer science)">B.Sc. (computer science)</option>
@@ -183,7 +183,7 @@
 
                             <!-- Checkbox -->
                             <div class='flex items-center'>
-                                <input type='checkbox' name='agree' id='agree' class='mt-[0.5rem]'>
+                                <input type='checkbox' name='campaign' id='agree' class='mt-[0.5rem]'>
                                 <label for='agree' class='ml-[0.25rem] text-gray-100 mr-[0.5rem]'>I agree to receive
                                     commercial information from YSM
                                     <span class='tooltip'>[*read more]
